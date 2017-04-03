@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>文章页</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/topbar-style2.css">
+	<link rel="stylesheet" href="css/botbar-style1.css">
+	<link rel="stylesheet" href="css/index-item.css">
+
+	<style>
+		.art-title {
+		    margin-top: 10px;
+		    font-size: 18px;
+		    color: #121212;
+		}
+		.art-info {
+		    margin-top: 10px;
+		    margin-bottom: 10px;
+		    font-size: 13px;
+		    color: #6d6d6d;
+		}
+		.art-info .date {
+			float: left;
+			margin-right: 13px;
+		}
+		.art-info .author {
+			float: left;
+		}
+		.art-info .collects {
+			float: right;
+			margin-right: 15px;
+		}
+		.art-info .collects .icon-collects {
+			display: inline-block;
+			height: 14px;
+			margin-right: 5px;
+		}
+		.art-info .likes {
+			float: right;
+		}
+		.art-info .likes .icon-likes {
+			display: inline-block;
+			height: 14px;
+			margin-right: 5px;
+		}
+		.art-picture {
+			width: 100%;
+			margin-bottom: 15px;
+		}
+		.art-content {
+		    margin-bottom: 50px;
+		    font-size: 16px;
+		    line-height: 29px;
+		    color: #636363;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div id="topbar">
+		<a class="left-icon-back" onclick="goback()">
+			<img src="icon/back.png" alt="back.jpg">
+		</a>
+		文章详情
+	</div>
+
+	<div id="container" class="clearfloat">
+		<div class="art-title">
+			艾灸能减肥不？艾灸通过艾绒燃烧发热
+		</div>
+		<div class="art-info clearfloat">
+			<div class="date">
+				2016-08-09
+			</div>
+			<div class="author">
+				艾绒哥
+			</div>
+			<a class="likes" id='like'>
+				<img class="icon-likes inactive" src="icon/liked.png" alt="">
+				点赞
+			</a>
+			<div class="collects" id='collect'>
+				<img class="icon-collects inactive" src="icon/collected.png" alt="">
+				收藏
+			</div>
+			<!-- TODO:
+				收藏点赞这里应该有点亮和取消点亮的动作，点击后点亮图标，再次点击关闭点亮的图标，应该为无色，但是我现在不太会 ps ，不会提取路径图
+			 -->
+		</div>
+		<img class="art-picture" src="img/art-demo1.png" alt="">
+		</img>
+		<div class="art-content">
+			艾灸疗法能减肥瘦身、防病、治病，在我国已有数千
+			年历史。早在春秋战国时期，人们已经开始广泛使用
+			艾灸法，如《庄子》中有“越人熏之以艾”，《孟子》
+			中也有“七年之病求三年之艾”的记载。历代医学著
+			作中更比比皆是。艾灸能激发、提高机体的免疫功能，
+			增强机体的抗病能力。
+		</div>
+	</div>
+
+	<div id="botbar">
+		<a href="index.html" class="left">
+			<div class="icon">
+				<img src="icon/home.jpg" alt="">
+			</div>
+			<div class="text">首页</div>
+		</a>
+		<a href="ayculture.html" class="center">
+			<div class="icon">
+				<img src="icon/ay-selected.jpg" alt="">
+			</div>
+			<div class="text text-selected">艾灸文化</div>
+		</a>
+		<a href="mine.html" class="right">
+			<div class="icon">
+				<img src="icon/mine.jpg" alt="">
+			</div>
+			<div class="text">我的</div>
+		</a>
+	</div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/global.js"></script>
+	<script src="js/artdetail.js"></script>
+</body>

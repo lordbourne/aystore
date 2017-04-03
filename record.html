@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>我的记录</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/topbar-style2.css">
+	<link rel="stylesheet" href="css/botbar-style1.css">
+
+	<style>
+		#container {
+			width: 100%;
+		}
+		.info {
+		    width: 100%;
+		    height: 45px;
+		    line-height: 45px;
+		    font-size: 15px;
+		    text-align: center;
+		    border-bottom: 1px solid #dadee5;
+		}
+
+		.record {
+			padding-left: 60px;
+		}
+		.record-item {
+			position: relative;
+			padding-left: 30px;
+			border-left: 1px solid #dadee5;
+		}
+		.record-item .item-info {
+			padding-top: 18px;
+			padding-bottom: 18px;
+			padding-right: 15px;
+			border-bottom: 1px solid #dadee5;
+		}
+		.record-item .item-info .p1 {
+			font-size: 18px;
+			color: #000;
+			margin-bottom: 10px;
+		}
+		.record-item .item-info .p2 {
+			font-size: 12px;
+			color: #838383;
+		}
+		.record-item .item-info .store {
+			float: left;
+		}
+		.record-item .item-info .price {
+			float: right;
+		}
+		.record-item .item-info .service {
+			float: left;
+		}
+		.record-item .item-info .score {
+			float: right;
+		}
+		.record-item .item-date {
+			position: absolute;
+			top: 21px;
+			margin-left: -80px;
+			font-size: 5px;
+			color: #818181;
+		}
+		.record-item .item-date:before {
+			content: "";
+			position: absolute;
+			left: 44px;
+			top: 3px;
+			width: 8px;
+			height: 8px;
+			border: 1px solid #dadee5;
+			border-radius: 50%;
+			background: #fff;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="topbar">
+		<a class="left-icon-back" onclick="goback()">
+			<img src="icon/back.png" alt="back.png">
+		</a>
+		消费记录
+	</div>
+
+	<div id="container">
+		<div class="info">
+			共消费 <span class="total-times">20</span> 次 <span class="text-orange">￥<span class="total-price">200000</span></span>&nbsp;&nbsp;&nbsp;&nbsp;积分 <span>20000</span> 分
+		</div>
+		<!-- 记录流水线部分 -->
+		<div class="record">
+			<div class="record-item">
+				<span class="item-date">
+					10-21
+				</span>
+				<div class="item-info clearfloat">
+					<p class="p1 clearfloat">
+						<span class="store">
+							井研养生保健店
+						</span>
+						<span class="price text-orange">
+							￥500
+						</span>
+					</p>
+					<p class="p2 clearfloat">
+						<span class="service">
+							艾灸店保健1人次，时间 65 分钟
+						</span>
+						<span class="score">
+							获得 500 积分
+						</span>
+					</p>
+				</div>
+			</div>
+			<div class="record-item">
+				<span class="item-date">
+					10-21
+				</span>
+				<div class="item-info clearfloat">
+					<p class="p1 clearfloat">
+						<span class="store">
+							井研养生保健店
+						</span>
+						<span class="price text-orange">
+							￥500
+						</span>
+					</p>
+					<p class="p2 clearfloat">
+						<span class="service">
+							艾灸店保健1人次，时间 65 分钟
+						</span>
+						<span class="score">
+							获得 500 积分
+						</span>
+					</p>
+				</div>
+			</div>
+			<div class="record-item">
+				<span class="item-date">
+					10-21
+				</span>
+				<div class="item-info clearfloat">
+					<p class="p1 clearfloat">
+						<span class="store">
+							井研养生保健店
+						</span>
+						<span class="price text-orange">
+							￥500
+						</span>
+					</p>
+					<p class="p2 clearfloat">
+						<span class="service">
+							艾灸店保健1人次，时间 65 分钟
+						</span>
+						<span class="score">
+							获得 500 积分
+						</span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/global.js"></script>
+</body>
+</html>
+

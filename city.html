@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <title>城市选择</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/city.css" media="all">
+</head>
+<body>
+	<!-- #header begins -->
+	<header id="header">
+		<div class="topbar">
+			<!-- <div class="icon-back">
+			</div> -->
+			<ul id="nation" class="nation clearfix">
+				<li class="selected">国内</li>
+				<li>海外</li>
+			</ul>
+		</div>
+
+		<div class="search">
+			<form action="">
+				<input type="text" placeholder="输入城市名或拼音查询">
+			</form>
+		</div>
+	</header>
+	<!-- #header ends -->
+
+	<!-- #main begins -->
+	<div id="main">
+		<article>
+			<section>
+				<div id="choose" class="choose clearfix">
+					<div class="city">
+						当前：<span>成都</span>
+					</div>
+					<div class="county">
+						选择县区
+						<img class="icon-down"></img>
+					</div>
+				</div>
+
+				<ul id="county-list" class="county-list clearfix">
+				</ul>
+			</section>
+
+			<section class="current">
+				<h1>当前定位城市</h1>
+				<ul class="clearfix">
+					<li class="block-list">成都</li>
+				</ul>
+			</section>
+
+			<section class="recent">
+				<h1>最近访问的城市</h1>
+				<ul class="clearfix">
+					<li class="block-list">北京</li>
+					<li class="block-list">深圳</li>
+					<li class="block-list">成都</li>
+				</ul>
+			</section>
+
+			<section class="hot">
+				<h1>热门城市</h1>
+				<ul class="clearfix">
+					<li class="block-list">北京</li>
+					<li class="block-list">成都</li>
+					<li class="block-list">北京</li>
+					<li class="block-list">深圳</li>
+					<li class="block-list">深圳</li>
+					<li class="block-list">成都</li>
+					<li class="block-list">北京</li>
+					<li class="block-list">深圳</li>
+					<li class="block-list">成都</li>
+				</ul>
+			</section>
+		</article>
+
+		<article>
+			<section>
+				<h1 class="bar-list-letter">A</h1>
+				<ul class="clearfix">
+					<li class="bar-list-city">鞍山</li>
+					<li class="bar-list-city">安庆</li>
+					<li class="bar-list-city">安阳</li>
+				</ul>
+			</section>
+			<section>
+				<h1 class="bar-list-letter">B</h1>
+				<ul class="clearfix">
+					<li class="bar-list-city">北京</li>
+					<li class="bar-list-city">保定</li>
+					<li class="bar-list-city">包头</li>
+				</ul>
+			</section>
+		</article>
+
+	</div>
+	<!-- #main ends -->
+
+	<!-- #sidebar begins -->
+	<aside id="sidebar">
+		<nav>
+			<ul>
+				<li>定位</li>
+				<li>最近</li>
+				<li>热门</li>
+				<li>A</li>
+				<li>B</li>
+				<li>C</li>
+				<li>D</li>
+				<li>E</li>
+			</ul>
+		</nav>
+
+	</aside>
+	<!-- #sidebar ends -->
+	<script src="js/jquery.js"></script>
+	<script src="js/city.js"></script>
+</body>
+</html>
+

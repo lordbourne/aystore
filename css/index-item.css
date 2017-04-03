@@ -1,0 +1,82 @@
+.store {
+	width: 92%;
+	margin: 0 auto;
+	padding-top: 2.9vh;
+	padding-bottom: 2.9vh;
+	/*border-top: 1px solid #d1d1d0;*/
+	/*border: 1px solid #000;*/
+}
+.line {
+	height: 0px;
+	margin-left: 4%;
+	/*width: 90%;*/
+	border-top: 1px solid #d1d1d0;
+}
+.line:last-child {
+	border: none;
+}
+/*.store:first-child {
+	border-top: none;
+}*/
+
+.store-main {
+	float: left;
+	width: 91.8%;
+	/*border: 1px solid #000;*/
+}
+.store .icon-location {
+	float: right;
+	width: 16px;  /* 图片没设置高度 */
+	margin-top: 5px;
+	/*border: 1px solid #000;*/
+}
+.store .icon-location img {
+	width: 100%;
+}
+.store-main .store-picture {
+	float: left;
+	width: 35%;
+	max-width: 120px;/* 锁定长宽比 */
+	overflow: hidden;
+	/*border: 1px solid #000;*/
+}
+.store-main .store-picture img {
+	width: 100%;
+	
+}
+.store-main .wrap1 {
+	float: right;
+	height: 10.2vh
+}
+.store-main .wrap1 .store-name {
+	font-size: 2.5vh;
+	margin-top: 8px;
+}
+.store-main .wrap1 .btn-order {
+	display: inline-block;
+	height: 4vh;
+	width: 108px;
+	margin-top: 6px;
+	color: #fff;
+	text-align: center;
+	line-height: 4vh;
+	border-radius: 3px;
+	margin-right: 20px;
+}
+.store-main .wrap1 .store-maxnumber {
+	display: inline-block;
+	margin-top: 6px;
+	font-size: 1.72vh;
+}
+
+.store .store-info {
+	clear: both;
+	font-size: 1.65vh;
+	margin-top: 80px;
+	/*background: red;*/
+}
+.store .store-address {
+	font-size: 1.65vh;
+	margin-top: 10px;
+	/*background: blue;*/
+}

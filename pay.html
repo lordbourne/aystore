@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/topbar-style2.css">
+	<link rel="stylesheet" href="css/botbar-style2.css">
+	<title>支付</title>
+	<style>
+		html {
+			background: #f1f0ec;
+		}
+		#container {
+			width: 100%;
+		}
+		#header {
+			display: box;
+			display: -webkit-box;
+			display: -moz-box;
+			-webkit-box-orient: vertical;
+			-moz-box-orient: vertical;
+			-ms-box-orient: vertical;
+			box-orient: vertical;
+			-webkit-box-pack: center;
+			-moz-box-pack: center;
+			-ms-box-pack: center;
+			box-pack: center;
+			-webkit-box-align: center;
+			-moz-box-align: center;
+			-ms-box-align: center;
+			box-align: center;
+			width: 100%;
+			height: 110px;
+			background-color: rgb(241, 240, 236);
+		}
+		#header .p1 {
+			font-size: 25px;
+			color: #000;
+		}
+		#header .p2 {
+			margin-top: 10px;
+			font-size: 13px;
+			color: #727272;
+		}
+		.part1 {
+			width: 100%;
+			border-top: 1px solid #dbdde0;
+			border-bottom: 1px solid #dbdde0;
+			padding-left: 20px;
+			background: #fff;
+		}
+		.part1 .part1-item {
+			width: 100%;
+			padding: 16px 0px;
+			font-size: 15px;
+			border-top: 1px solid #d1d1d0;
+			overflow: hidden;
+		}
+		.part1 .part1-item:first-child {
+			border-top: none;
+		}
+		.part1 .part1-item ul {
+			width: 90.38%;
+			margin-left: 4px;
+			overflow: hidden;
+		}
+		.part1 .part1-item ul li {
+			float: left;
+			width: 33%;
+		}
+		.part1 .part1-item select {
+			width: 85px;
+		}
+
+		.part2 {
+			width: 100%;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			margin-top: 6px;
+			border-top: 1px solid #dbdde0;
+			border-bottom: 1px solid #dbdde0;
+			background: #fff;
+		}
+		.part2 li {
+			width: 86.13%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.part2 li .item {
+			position: relative;
+			width: 100%;
+			height: 48px;
+			line-height: 50px;
+		}
+		.part2 li .item .icon {
+			position: absolute;
+			left: 0px;
+			top: 50%;
+			width: 35px;
+			height: 35px;
+			margin-top: -17.5px;
+		}
+		.part2 li .item .icon img {
+			width: 100%;
+		}
+		.part2 li .item .info {
+			float: right;
+			width: 86.1%;
+			height: 100%;
+			border-bottom: 1px solid #cccccc;
+		}
+		.part2 li .item .info .key {
+			float: left;
+			font-size: 15px;
+			color: #5f5f5f;
+		}
+		.part2 li .item .info .value {
+			float: right;
+			font-size: 20px;
+			color: #2e2e2e;
+		}
+		.part2 li .other-info {
+			float: right;
+			width: 86.1%;
+			height: 20px;
+			line-height: 20px;
+			font-size: 10px;
+			color: #888888;
+			overflow: hidden;
+		}
+		.part2 li .other-info .info-left {
+			float: left;
+		}
+		.part2 li .other-info .info-right {
+			float: right;
+		}
+		/* 支付部分 */
+		.part3 {
+			margin-top: 8px;
+			padding: 0px 40px;
+			background: #fff;
+		}
+		.part3 form {
+			padding: 12px 0px;
+		}
+		.part3 form .wx {
+			float: left;
+		}.part3 form .ali {
+			float: right;
+		}
+		.part3 form label {
+			/*float: left;*/
+			display: box;
+			display: -webkit-box;
+			display: -moz-box;
+			-webkit-box-orient: horizontal;
+			-moz-box-orient: horizontal;
+			-ms-box-orient: horizontal;
+			box-orient: horizontal;
+			-webkit-box-align: center;
+			-moz-box-align: center;
+			-ms-box-align: center;
+			box-align: center;
+			height: 40px;/* 一定要给 */
+		}
+		.part3 form label .radio-wrapper {
+			width: 15px;
+			height: 15px;
+		}
+		.part3 form label .radio-wrapper input {
+			width: 100%;
+			height: 100%;
+		}
+		.part3 form label img {
+			height: 36px;
+			margin-left: 3px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="topbar">
+		<a class="left-icon-back" onclick="goback()">
+			<img src="icon/back.png" alt="back.png">
+		</a>
+		成都艾瑞建设路保健养生店
+	</div>
+	<div id="container">
+		<div id="header">
+			<div class="p1">
+				￥<span class="">300.00</span>
+			</div>
+			<div class="p2">
+				预定时间：<span>2016-01-22 10: 30</span>
+			</div>
+		</div>
+
+		<ul class="part1">
+			<li class="part1-item">
+				<ul>
+					<li class="service">艾灸床保健:</li>
+					<li class="price"><span class="text-orange" data-price="price">100</span> 元/小时</li>
+					<li class="num">
+						<select name="" id="">
+							<option value="">1人</option>
+							<option value="">2人</option>
+							<option value="">3人</option>
+							<option value="">4人</option>
+							<option value="">5人</option>
+							<option value="">6人</option>
+						</select>
+					</li>
+				</ul>
+			</li>
+
+			<li class="part1-item">
+				<ul>
+					<li class="service">按摩:</li>
+					<li class="price"><span class="data-price text-orange">100</span> 元/小时</li>
+					<li class="num">
+						<select name="" id="">
+							<option value="">1人</option>
+							<option value="">2人</option>
+							<option value="">3人</option>
+							<option value="">4人</option>
+							<option value="">5人</option>
+							<option value="">6人</option>
+						</select>
+					</li>
+				</ul>
+		</ul>
+
+		<ul class="part2">
+			<li class="clearfloat">
+				<div class="item clearfloat">
+					<div class="icon">
+						<img src="icon/name.png" alt="">
+					</div>
+					<div class="info">
+						<span class="key">姓名</span>
+						<span class="value">赵旭日</span>
+					</div>
+				</div>
+				<div class="other-info">
+				</div>
+			</li>
+			<li class="clearfloat">
+				<div class="item clearfloat">
+					<div class="icon">
+						<img src="icon/phone.png" alt="">
+					</div>
+					<div class="info">
+						<span class="key">电话</span>
+						<span class="value">13855844754</span>
+					</div>
+				</div>
+				<div class="other-info">
+					（手机号为账号查保健记录）
+				</div>
+			</li>
+			<li class="clearfloat">
+				<div class="item clearfloat">
+					<div class="icon">
+						<img src="icon/pay.png" alt="">
+					</div>
+					<div class="info">
+						<span class="key">余额支付</span>
+						<span class="value"><span class="text-orange">￥<span data-price="price">270</span></span> 元</span>
+					</div>
+				</div>
+				<div class="other-info">
+					<span class="info-left">线上支付享受 <span class="text-orange" data-price="price">9</span> 折优惠</span>
+					<span class="info-right">余额：<span class="text-orange" data-price="price">455</span> 元</span>
+				</div>
+			</li>
+		</ul>
+
+		<div class="part3">
+			<form class="clearfloat">
+				<label class="wx" for="wx">
+					<div class="radio-wrapper">
+						<input type="radio" id="wx" name="pay">
+					</div>
+					<img src="icon/wxpay.jpg" alt="">
+				</label>
+				<label class="ali" for="ali">
+					<div class="radio-wrapper">
+						<input type="radio" id="ali" name="pay">
+					</div>
+					<img src="icon/alipay.png" alt="">
+				</label>
+			</form>
+		</div>
+	</div>
+
+	<div id="botbar">
+		<a href="pay-successful.html" class="btn btn-long btn-blue">
+			支付
+		</a>
+	</div>
+
+	<script type="text/javascript" src="js/global.js"></script>
+</body>
+
+</html>

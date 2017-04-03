@@ -1,0 +1,275 @@
+/* --------------------------------以下为自己的定制风格, 定制样式------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* --全局--- */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  border: none;
+  display: block;
+}
+.clearfix,
+.clearfloat {
+  zoom: 1;
+  /* 针对 IE */
+}
+.clearfix:after,
+.clearfloat:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0px;
+}
+body {
+  font-family: "方正兰亭纤黑_GBK", "Microsoft YaHei";
+  font-size: 14px;
+  line-height: 1.42867143;
+  /* 或 line-height: 20px;*/
+  color: #333;
+  font-weight: 500;
+  /*font-family: inherit;
+    line-height: 1.1;
+    color: inherit;*/
+}
+#container {
+  width: 91.6%;
+  max-width: 750px;
+  margin: 40px auto 50px;
+  /* 7vh 和 10.3vh 指随着 bar 的宽度一起改 */
+  overflow: hidden;
+  /* 撑开container，防止塌陷 */
+  clear: both;
+}
+#header,
+header {
+  clear: both;
+}
+/* 以上为我的全局设置 */
+/*---------- 一些可供 jq 用的样式 -----------*/
+.hidden {
+  display: none;
+}
+.inactive {
+  -webkit-filter: grayscale(1);
+}
+/**********font settings begin**********/
+.xs,
+.text-xs {
+  font-size: 1.8vh;
+}
+.sm,
+.text-sm {
+  font-size: 2.2vh;
+}
+.md,
+.text-md {
+  font-size: 2.6vh;
+}
+.lg,
+.text-lg {
+  font-size: 3.0vh;
+}
+.xl,
+.text-xl {
+  font-size: 4.0vh;
+}
+.xxl,
+.text-xxl {
+  font-size: 5.0vh;
+}
+.price {
+  color: #ff8400;
+}
+.orange,
+.num-orange,
+.text-orange {
+  /* 橙色数字 */
+  color: #ff8400;
+}
+.blue,
+.text-blue {
+  color: #00c1d1;
+}
+.text-gray {
+  /* 选中与未选中的切换 */
+  color: #797979;
+}
+.fontwhite {
+  color: #fff;
+}
+.bold,
+.text-bold {
+  font-weight: bold;
+}
+/*---------- font settings end ----------*/
+/* ----表单设置---- */
+/* 按钮 */
+button,
+.btn {
+  border: none;
+  text-align: center;
+}
+.btn-small {
+  display: inline-block;
+  width: 125px;
+  height: 27px;
+  font-size: 17px;
+  line-height: 27px;
+  border-radius: 4px;
+}
+.btn-long {
+  display: block;
+  width: 90.53%;
+  height: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 17px;
+  line-height: 35px;
+}
+.btn-blue {
+  color: #fff;
+  background: #19c5d3;
+}
+.btn-orange {
+  /* 按钮的背景色，如已预定按钮 */
+  color: #fff;
+  background: #ffba00;
+}
+/* 输入框 */
+.txtbox-blue {
+  /* text框的背景色 */
+  background: #45d6e1;
+}
+input[type="text"] {
+  border: 1px solid #c3c3c3;
+}
+/* 选择框 */
+select {
+  border: 1px solid #c3c3c3;
+  /*好像不用圆角*/
+}
+select {
+  /* 下拉三角的颜色为 rgb(149,149,149)*/
+}
+/* ----以上为表单设置--- */
+/* 背景颜色 */
+.bg-gray {
+  /* 灰色背景 */
+  background: #f1f0ec;
+}
+.bg-white {
+  background: #fff;
+}
+.bg-red {
+  /* 测试用 */
+  background: red;
+}
+.bg-blue {
+  /* 测试用 */
+  background: blue;
+}
+.bg-green {
+  /* 测试用 */
+  background: green;
+}
+/* 水平线 hr、边框线 */
+.bd {
+  border: 1px solid #000;
+}
+.bd-blue {
+  /* 用于调试 */
+  border: 1px solid blue;
+}
+.bd-red {
+  /* 用于调试 */
+  border: 1px solid red;
+}
+.bd-green {
+  /* 用于调试 */
+  border: 1px solid green;
+}
+.bd-yellow {
+  /* 用于调试 */
+  border: 1px solid yellow;
+}
+.bd-gray {
+  /* 项目外边框颜色： */
+  border: 1px solid #dadce0;
+}
+hr,
+.hr {
+  border: 1px solid #d1d1d1;
+}
+/* 显示样式 */
+.inl,
+.inline {
+  display: inline;
+}
+.blc,
+.block {
+  display: block;
+}
+.il,
+.inlblc,
+.inline-block {
+  display: inline-block;
+}
+/* 浮动 */
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clr {
+  clear: both;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.ovh {
+  overflow: hidden;
+}
+.icon-position {
+  background: url("icon/position.jpg");
+  width: 100px;
+  /*border: 1px solid #000;*/
+}
+/* 总结初始化设计技巧 */
+/*可以参考一些大的网站的设计CSS，如淘宝、腾讯、网易， lionit 脚本 */
+/* 从网上下载一些现成的初始化代码 */
+/* 一些颜色样式 */
+/* 命名方式：
+  - 背景 bg 还是字体 color
+  - 用途：按钮还是。。。
+  - 颜色名
+  */
+/* 浅蓝 */
+.sel-blue {
+  /* 选中项目的背景色，好像暂时用不到，
+  因为还不会绘图，或者直接用图标贴上得了, 用 js */
+  color: #00c1d1;
+}
+.text-blue,
+.sel-text-blue {
+  /* 选中项目字体的颜色, js 加入 assClass */
+  color: #00c1d1;
+}
+.bluetooth-blue {
+  /* bluetooth 图标的颜色，暂时用不到 */
+  background: #75dce5;
+}

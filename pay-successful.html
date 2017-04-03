@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/topbar-style2.css">
+	<title>支付成功</title>
+
+	<style>
+		html {
+			background: #f1f0ec;
+		}
+		#container {
+			width: 100%;
+		}
+/*----------------提示信息---------------*/
+		.notice {
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 70px;
+		}
+		.notice .notice-title {
+			display: box;
+			display: -webkit-box;
+			display: -moz-box;
+			-webkit-box-orient: horizontal;
+			-moz-box-orient: horizontal;
+			-ms-box-orient: horizontal;
+			box-orient: horizontal;
+			-webkit-box-pack: justify;
+			-moz-box-pack: justify;
+			-ms-box-pack: justify;
+			box-pack: justify;
+			-webkit-box-align: center;
+			-moz-box-align: center;
+			-ms-box-align: center;
+			box-align: center;
+			width: 62%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.notice .notice-title .img-wrapper {
+			height: 67px;
+		}
+		.notice .notice-title .img-wrapper img {
+			height: 100%;
+		}
+		.notice .notice-title .title-msg {
+			font-size: 36px;
+			color: #1b1b1b;
+		}
+		.notice .notice-info {
+			margin-top: 20px;
+			font-size: 16px;
+			color: #6d6d6d;
+			text-align: center;
+		}
+/* --------------按钮部分----------------*/
+		.btn {
+			margin-top: 65px;
+		}
+/* --------------分享部分--------------- */
+		.share {
+			width: 100%;
+			margin-top: 70px;
+			overflow: hidden;
+			text-align: center;
+		}
+		.share .text1 {
+			font-size: 16px;
+			color: #6d6d6d;
+		}
+		.share .share-item {
+			display: block;
+			float: left;
+			margin-top: 20px;
+			width: 33.3%;
+			text-align: center;
+		}
+		.share .share-item .img-wrapper {
+			height: 60px;
+		}
+		.share .share-item  .img-wrapper img {
+			margin-left: auto;
+			margin-right: auto;
+			height: 100%;
+		}
+		.share .share-item .text2 {
+			margin-top: 10px;
+			font-size: 14px;
+			color: #6d6d6d;
+		}
+	</style>
+
+</head>
+<body>
+	<div id="topbar">
+		<a class="left-icon-back" onclick="goback()">
+			<img src="icon/back.png" alt="back.png">
+		</a>
+		成都艾瑞建设路保健养生店
+	</div>
+
+	<div id="container">
+
+		<div class="notice">
+			<div class="notice-title">
+				<div class="img-wrapper">
+					<img src="icon/successful.png" alt="">
+				</div>
+				<div class="title-msg">支付成功</div>
+			</div>
+			<div class="notice-info">
+				获得 <span>300</span> 个积分, 请按时到店保健
+			</div>
+		</div>
+
+
+		<a class="btn btn-long btn-blue" href="index.html">
+			完成
+		</a>
+
+		<div class="share">
+			<div class="text1">
+				分享获得 <span>10</span> 个艾灸币(等价10元消费金额)
+			</div>
+			<a class="share-item">
+				<div class="img-wrapper">
+					<img src="icon/friendcircle.png" alt="">
+				</div>
+				<p class="text2">微信朋友圈</p>
+			</a>
+			<a class="share-item">
+				<div class="img-wrapper">
+					<img src="icon/weibo.png" alt="">
+				</div>
+				<p class="text2">新浪微博</p>
+			</a>
+			<a class="share-item">
+				<div class="img-wrapper">
+					<img src="icon/qqspace.png" alt="">
+				</div>
+				<p class="text2">QQ 空间</p>
+			</a>
+		</div>
+
+	</div>
+
+	<script src="js/global.js"></script>
+</body>
+</html>
