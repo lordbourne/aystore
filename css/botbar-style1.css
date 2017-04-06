@@ -34,23 +34,23 @@
 }*/
 /* 使用方法：
 当前页的图片路径改为 selected 结尾的
-文字加上 text-selected 
+文字加上 text-selected
 <div id="botbar">
 	<a href="index.html" class="left">
 		<div class="icon">
-			<img src="icon/home-selected.jpg" alt="">
+			<img src="img/home-selected.jpg" alt="">
 		</div>
 		<div class="text text-selected">首页</div>
 	</a>
 	<a href="ayculture.html" class="center">
 		<div class="icon">
-			<img src="icon/ay.jpg" alt="">
+			<img src="img/ay.jpg" alt="">
 		</div>
 		<div class="text">艾灸文化</div>
 	</a>
 	<a href="mine.html" class="right">
 		<div class="icon">
-			<img src="icon/mine.jpg" alt="">
+			<img src="img/mine.jpg" alt="">
 		</div>
 		<div class="text">我的</div>
 	</a>

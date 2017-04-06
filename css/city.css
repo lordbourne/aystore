@@ -8,7 +8,7 @@
   height: 120px;
   padding-top: 15px;
   box-sizing: border-box;
-  background-image: url(../icon/back.png);
+  background-image: url(../img/back.png);
   background-repeat: no-repeat;
   background-position: 20px center;
   background-size: 30px;
@@ -46,7 +46,7 @@
   height: 80px;
   border: none;
   border-radius: 2px;
-  background-image: url(../icon/search.png);
+  background-image: url(../img/search.png);
   background-repeat: no-repeat;
   background-position: 10px center;
   background-size: 30px;

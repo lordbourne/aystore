@@ -33,7 +33,7 @@
     height: 30px;
     margin-top: -15px;
     border-radius: 5px;
-    background-image: url(../icon/search.png);
+    background-image: url(../img/search.png);
     background-repeat: no-repeat;
     background-position: 10px center;
     background-size: 15px;
@@ -52,7 +52,7 @@
 /* 使用方法：
 <div id="topbar">
 	<a class="location-icon">
-		<img src="icon/location1.jpg">
+		<img src="img/location1.jpg">
 	</a>
 	<div class="location-text">
 		成都
