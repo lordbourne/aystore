@@ -1,0 +1,124 @@
+{
+  "timestamp": "201703191914",
+  "errorCode": "0",
+  "data": [
+    {
+      "strCity": "成都",
+      "strDistrict": "成华区",
+      "strThumbnail": "img/shop1.jpg",
+      "strName": "成都艾瑞建设路保健养生店",
+      "ordStatus": 0,
+      "avgPrice": 200,
+      "strServices": [
+        {
+          "srvName": "艾灸",
+          "srvPrice": 80,
+          "srvUnit": "元/小时"
+        },
+        {
+          "srvName": "艾叶洗脚",
+          "srvPrice": 30,
+          "srvUnit": "元/次"
+        },
+        {
+          "srvName": "针灸",
+          "srvPrice": "",
+          "srvUnit": ""
+        },
+        {
+          "srvName": "艾灸",
+          "srvPrice": 80,
+          "srvUnit": "元/小时"
+        },
+        {
+          "srvName": "艾灸",
+          "srvPrice": 80,
+          "srvUnit": "元/小时"
+        }
+      ],
+      "strMap": "",
+      "strAddress": "建设北路二段44号脸红小区5栋12号"
+    },
+    {
+      "strCity": "成都",
+      "strDistrict": "成华区",
+      "strThumbnail": "img/shop1.jpg",
+      "strName": "成都艾瑞建设路保健养生店",
+      "ordStatus": 1,
+      "avgPrice": 300,
+      "strServices": [
+        {
+          "srvName": "艾灸",
+          "srvPrice": 90,
+          "srvUnit": "元/小时"
+        },
+        {
+          "srvName": "艾叶洗脚",
+          "srvPrice": 20,
+          "srvUnit": "元/次"
+        },
+        {
+          "srvName": "针灸",
+          "srvPrice": 20,
+          "srvUnit": "元/次"
+        }
+      ],
+      "strMap": "",
+      "strAddress": "建设北路二段55号科大小区6栋25号"
+    },
+    {
+      "strCity": "成都",
+      "strDistrict": "成华区",
+      "strThumbnail": "img/shop1.jpg",
+      "strName": "成都艾瑞建设路保健养生店",
+      "ordStatus": 0,
+      "avgPrice": 200,
+      "strServices": [
+        {
+          "srvName": "艾灸",
+          "srvPrice": 80,
+          "srvUnit": "元/小时"
+        },
+        {
+          "srvName": "艾叶洗脚",
+          "srvPrice": 30,
+          "srvUnit": "元/次"
+        },
+        {
+          "srvName": "针灸",
+          "srvPrice": 44,
+          "srvUnit": "元/次"
+        }
+      ],
+      "strMap": "",
+      "strAddress": "建设北路二段44号脸红小区5栋12号"
+    },
+    {
+      "strCity": "成都",
+      "strDistrict": "成华区",
+      "strThumbnail": "img/shop1.jpg",
+      "strName": "成都艾瑞建设路保健养生店",
+      "ordStatus": 0,
+      "avgPrice": 800,
+      "strServices": [
+        {
+          "srvName": "艾灸",
+          "srvPrice": 80,
+          "srvUnit": "元/小时"
+        },
+        {
+          "srvName": "艾叶洗脚",
+          "srvPrice": 30,
+          "srvUnit": "元/次"
+        },
+        {
+          "srvName": "针灸",
+          "srvPrice": 89,
+          "srvUnit": "元/次"
+        }
+      ],
+      "strMap": "",
+      "strAddress": "建设北路二段44号哈哈小区5栋55号"
+    }
+  ]
+}

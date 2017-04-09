@@ -2,6 +2,9 @@
   width: 100%;
   background: #fff;
 }
+.first {
+  border-top: none !important;
+}
 .store-item {
   padding-left: 10px;
 }
@@ -12,9 +15,6 @@
   padding-right: 25px;
   border-top: 1px solid #d1d1d0;
 }
-.first {
-  border-top: none !important;
-}
 .store-item .item-box .icon {
   position: absolute;
   top: 12px;
@@ -24,41 +24,51 @@
 .store-item .item-box .icon img {
   height: 100%;
 }
-.box-content .picture {
+.store-item .item-box .box-content .picture {
   float: left;
   height: 70px;
   margin-bottom: 10px;
 }
-.box-content .picture img {
+.store-item .item-box .box-content .picture img {
   height: 100%;
 }
-.box-content .name {
+.store-item .item-box .box-content .name {
   padding-top: 5px;
   padding-left: 118px;
   font-size: 17px;
   color: #2e2e2e;
 }
-.box-content .order {
+.store-item .item-box .box-content .order {
   margin-top: 5px;
   padding-left: 118px;
 }
-.box-content .order .btn {
-  width: 60%;
+.store-item .item-box .box-content .order .btn {
+  width: 140px;
 }
-.box-content .order .maxnumber {
+.store-item .item-box .box-content .order .avg-price {
   display: inline-block;
   float: right;
   margin-top: 7px;
   font-size: 15px;
   color: #2e2e2e;
 }
-.box-content .service {
+.store-item .item-box .box-content .service {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #6d6d6d;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.store-item .item-box .box-content .service li {
+  float: left;
+  margin-right: 6px;
+}
+.store-item .item-box .box-content .address {
   margin-top: 5px;
   font-size: 13px;
   color: #6d6d6d;
 }
-.box-content .address {
-  margin-top: 5px;
-  font-size: 13px;
-  color: #6d6d6d;
+.ordered {
+  background-color: #ffba00;
 }

@@ -24,7 +24,7 @@
 	font-size: 14px;
 	color: rgb(109,109,109);
 }
-.article-style1 .left .info .keyword,
+.article-style1 .left .info .author,
 .article-style1 .left .info .likes,
 .article-style1 .left .info .comments {
 	float: left;
@@ -39,7 +39,7 @@
 }
 .article-style1 .picture img {
 	width: 100%;
-	max-height: 10.2vh; 
+	max-height: 10.2vh;
 }
 /* 使用示例：
 <a class="article-style1 block" href="artdetail.html">

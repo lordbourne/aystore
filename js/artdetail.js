@@ -1,5 +1,19 @@
 $(document).ready(function() {
-  // 获得文章的返回数据
+  $.ajax({
+    url: 'js/artData.json',
+    type: 'GET',
+    dataType: 'json',
+    data: {},
+    success: function (data) {
+      var artNum = data.data.length;
+      for (var i=0; i<artNum; i++) {
+        if () {
+
+        }
+      }
+    }
+  });
+
 
   var collected = 0; // 收藏状态，从返回数据中获得
   var liked = 0; // 点赞状态，从返回数据中获得
