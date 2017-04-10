@@ -2,4 +2,7 @@
 tags
 .tags*
 !tags/
-resource
+resource/
+res/
+*.sublime-project
+*.sublime-workspace
