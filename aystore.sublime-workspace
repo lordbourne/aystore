@@ -1,0 +1,1523 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fo",
+				"focus\t.focus()"
+			],
+			[
+				"goto",
+				"gotoNextPage(obj)"
+			],
+			[
+				"deco",
+				"decodeURIComponent(uri)"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"tb",
+				"tbl-head\t(reset.less)"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"bdb",
+				"border-box"
+			],
+			[
+				"butt",
+				"buttons\t(buttons.html)"
+			],
+			[
+				"but",
+				"buttons\t(buttons.html)"
+			],
+			[
+				"loc",
+				"localStorage"
+			],
+			[
+				"data",
+				"data-input\t(recr-input.html)"
+			],
+			[
+				"loac",
+				"localStorage"
+			],
+			[
+				"fun",
+				"fun\tFunction"
+			],
+			[
+				"data-",
+				"data-m_as"
+			],
+			[
+				"par",
+				"parseInt\t(step4.jsp)"
+			],
+			[
+				"rj",
+				"rjjs\t(step4.jsp)"
+			],
+			[
+				"la",
+				"latitude"
+			],
+			[
+				"lo",
+				"longitude"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"sho",
+				"show_map"
+			],
+			[
+				"ready",
+				"ready\t$(document).ready"
+			],
+			[
+				"ser",
+				"serializeArray\t.serializeArray()"
+			],
+			[
+				"con",
+				"container\t(inco-data.html)"
+			],
+			[
+				"c",
+				"cellspacing\tAttr"
+			],
+			[
+				"sele",
+				"selected-plays\t(index.html)"
+			],
+			[
+				"pre",
+				"prependTo\t.prependTo()"
+			],
+			[
+				"clone",
+				"clonedCopy"
+			],
+			[
+				"pare",
+				"parentParagraph"
+			],
+			[
+				"re",
+				"reset.css\t(income.html)"
+			],
+			[
+				"clo",
+				"color"
+			],
+			[
+				"ls",
+				"list-style"
+			],
+			[
+				"ct",
+				"content-box"
+			],
+			[
+				"no",
+				"no-repeat\t(income.css)"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"r",
+				"reset.css\t(index.html)"
+			],
+			[
+				"css",
+				"css/"
+			],
+			[
+				"ina",
+				"inactive"
+			],
+			[
+				"gr",
+				"grayscale\t(artdetail.html)"
+			],
+			[
+				"lik",
+				"like\t(artdetail.html)"
+			],
+			[
+				"colle",
+				"collected"
+			],
+			[
+				"app",
+				"appendTo\t.appendTo()"
+			],
+			[
+				"str",
+				"strPrice"
+			],
+			[
+				"item",
+				"itemBox"
+			],
+			[
+				"store",
+				"store-item\t(index1703191527.html)"
+			],
+			[
+				"stor",
+				"storeItem"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"on",
+				"onclick"
+			],
+			[
+				"bloc",
+				"block-list\t(city.html)"
+			],
+			[
+				"ma",
+				"margin-right"
+			],
+			[
+				"ctas",
+				"ctags.exe"
+			],
+			[
+				"php",
+				"php\t<?php … ?>"
+			],
+			[
+				"APP_",
+				"APP_DEBUG\t(admin.php)"
+			],
+			[
+				"APP",
+				"APP_NAME\t(index.php)"
+			],
+			[
+				"erro",
+				"error_log"
+			],
+			[
+				"a",
+				"array\t$… = array (…)"
+			],
+			[
+				"show",
+				"showPic"
+			],
+			[
+				"sec",
+				"sec\tSection"
+			],
+			[
+				"bf",
+				"\\bfseries                                         \tlatex-document"
+			],
+			[
+				"ph",
+				"\\phi                                              \tlatex-mathsymbols"
+			],
+			[
+				"try",
+				"try\tWrap in try { … } catch (…) { … }"
+			],
+			[
+				"_",
+				"$_\tGET['…']"
+			],
+			[
+				"fora",
+				"foreach\tforeach …"
+			],
+			[
+				"date_de",
+				"date_default_timezone_set"
+			],
+			[
+				"file",
+				"filename\t(go-pear.phar)"
+			],
+			[
+				"sta",
+				"static\t(go-pear.phar)"
+			],
+			[
+				"counter",
+				"counter-increment"
+			],
+			[
+				"coun",
+				"counter-reset"
+			],
+			[
+				"xl",
+				"xmlObj"
+			],
+			[
+				"xml",
+				"xmlObj"
+			],
+			[
+				"cra",
+				"createTime"
+			],
+			[
+				"Crea",
+				"createTime"
+			],
+			[
+				"sim",
+				"simplexml_load_string"
+			],
+			[
+				"var",
+				"var_export"
+			],
+			[
+				"begind",
+				"\\begin{document}                                  \tlatex-document"
+			],
+			[
+				"al",
+				"align                                             \tamsmath"
+			],
+			[
+				"sub",
+				"sub\tSub Section"
+			],
+			[
+				"ce",
+				"\\centering                                        \ttex"
+			],
+			[
+				"center",
+				"\\centerline{text}                                 \tlatex-l2tabu"
+			],
+			[
+				"texc",
+				"\\textcolor{name}{text}                            \tgraphicx"
+			],
+			[
+				"textco",
+				"\\textcolor{name}{text}                            \tgraphicx"
+			],
+			[
+				"borb",
+				"border-bottom-color"
+			],
+			[
+				"subp",
+				"subp\tSub Paragraph"
+			],
+			[
+				"subs",
+				"subs\tSub Sub Section"
+			],
+			[
+				"cha",
+				"cha\tChapter"
+			],
+			[
+				"part",
+				"part\tPart"
+			],
+			[
+				"tab",
+				"\\tableofcontents                                  \tlatex-document"
+			],
+			[
+				"end",
+				"\\end{}                                            \tlatex-document"
+			],
+			[
+				"left",
+				"\\left|                                            \tlatex-document"
+			],
+			[
+				"emp",
+				"\\emptyset                                         \tlatex-mathsymbols"
+			],
+			[
+				"be",
+				"\\begin{displaymath}                               \tlatex-document"
+			],
+			[
+				"to",
+				"tov\ttext-overflow: ${ellipsis};"
+			],
+			[
+				"para",
+				"\\paragraph{title}                                 \tlatex-document"
+			],
+			[
+				"und",
+				"\\underline{text}                                  \tlatex-document"
+			],
+			[
+				"bfig",
+				"\\begin{figure}                                    \tlatex-document"
+			],
+			[
+				"figr",
+				"\\end{figure}                                      \tlatex-document"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"rem",
+				"removeClass\t.removeClass()"
+			],
+			[
+				"insert",
+				"insertBefore\t.insertBefore()"
+			],
+			[
+				"wrap",
+				"wrapAll\t.wrapAll()"
+			],
+			[
+				"inse",
+				"insertBefore\t.insertBefore()"
+			],
+			[
+				"cl",
+				"clearfix"
+			],
+			[
+				"sw",
+				"switcherWidth"
+			],
+			[
+				"ani",
+				"animate\t.animate()"
+			],
+			[
+				"swi",
+				"switcherWidth"
+			],
+			[
+				"fir",
+				"firstPara"
+			],
+			[
+				"def",
+				"defaultSize"
+			],
+			[
+				"docu",
+				"\\documentclass{style}                             \tlatex-document"
+			],
+			[
+				"cla",
+				"className"
+			],
+			[
+				"togg",
+				"toggleSwitcher"
+			],
+			[
+				"tri",
+				"triggers"
+			],
+			[
+				"tr",
+				"trigger\t.trigger()"
+			],
+			[
+				"swih",
+				"switcher-default"
+			],
+			[
+				"bod",
+				"bodyClass"
+			],
+			[
+				"selc",
+				"selected"
+			],
+			[
+				"add",
+				"addClass\t.addClass()"
+			],
+			[
+				"cli",
+				"click\t.click()"
+			],
+			[
+				"read",
+				"ready\t$(document).ready"
+			],
+			[
+				"form",
+				"formValue"
+			],
+			[
+				"req",
+				"requestData"
+			],
+			[
+				"lists",
+				"list-style"
+			],
+			[
+				"pagen",
+				"\\pagenumbering{numstyle}                          \tlatex-document"
+			],
+			[
+				"setlen",
+				"\\setlength{\\gnat}{length}                         \tlatex-dev"
+			],
+			[
+				"bedoc",
+				"\\begin{document}                                  \tlatex-document"
+			],
+			[
+				"ne",
+				"\\newpage                                          \tlatex-document"
+			],
+			[
+				"subsub",
+				"\\subsubsection*{title}                            \tlatex-document"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"pad",
+				"padding-right"
+			],
+			[
+				"m",
+				"middle"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Vintageous/Vintageous.sublime-build",
+					""
+				],
+				[
+					"Packages/Vintageous/Vintageous.sublime-build",
+					"Vintageous - Test (All)"
+				],
+				[
+					"Packages/Vintageous/Vintageous.sublime-build",
+					"Vintageous - Test (This File Only)"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				"XeLaTeX"
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				"XeLaTeX"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Vintageous/Vintageous.sublime-build",
+					""
+				],
+				[
+					"Packages/Vintageous/Vintageous.sublime-build",
+					"Vintageous - Test (All)"
+				],
+				[
+					"Packages/Vintageous/Vintageous.sublime-build",
+					"Vintageous - Test (This File Only)"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				"XeLaTeX"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Vintageous/Vintageous.sublime-build",
+					""
+				],
+				[
+					"Packages/Vintageous/Vintageous.sublime-build",
+					"Vintageous - Test (All)"
+				],
+				[
+					"Packages/Vintageous/Vintageous.sublime-build",
+					"Vintageous - Test (This File Only)"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				],
+				[
+					"Packages/User/php.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/php.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"emmet",
+				"Emmet: Remove Tag"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"pcd",
+				"Package Control: Disable Package"
+			],
+			[
+				"ssjsc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"pcip",
+				"Package Control: Install Package"
+			],
+			[
+				"ex",
+				"ExpandRegion"
+			],
+			[
+				"prv",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"table",
+				"Table Editor: Enable for current view"
+			],
+			[
+				"sspt",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"ctags",
+				"CTags: Show Symbols (file)"
+			],
+			[
+				"ctag",
+				"CTags: Show Symbols (all)"
+			],
+			[
+				"confli",
+				"FindKeyConflicts: Overlap Conflicts"
+			],
+			[
+				"ssmd",
+				"Set Syntax: Markdown GFM"
+			],
+			[
+				"fet",
+				"Fetch: Manage"
+			],
+			[
+				"feth",
+				"Fetch: File"
+			],
+			[
+				"ssphp",
+				"Set Syntax: PHP"
+			],
+			[
+				"sshtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"Snippet: ",
+				"Snippet: html"
+			],
+			[
+				"sshtn",
+				"Set Syntax: HTML (Erlang)"
+			],
+			[
+				"ssla",
+				"Set Syntax: LaTeX"
+			],
+			[
+				"tab",
+				"Table Editor: Enable for current view"
+			],
+			[
+				"match",
+				"BracketHighlighter: Match Brackets (ignore threshold)"
+			],
+			[
+				"find",
+				"FindKeyConflicts: All Conflicts"
+			],
+			[
+				"ssxml",
+				"Set Syntax: XML"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"pce",
+				"Package Control: Enable Package"
+			],
+			[
+				"pcrp",
+				"Package Control: Disable Package"
+			],
+			[
+				"color",
+				"Color Picker"
+			],
+			[
+				"colo",
+				"Colorsublime: Browse Themes"
+			],
+			[
+				"pc",
+				"Package Control: Remove Package"
+			],
+			[
+				"sslat",
+				"Set Syntax: LaTeX"
+			],
+			[
+				"ssjson",
+				"Set Syntax: JSON"
+			],
+			[
+				"ssx",
+				"Set Syntax: XML"
+			],
+			[
+				"te",
+				"Table Editor: Enable for current view"
+			],
+			[
+				"ta",
+				"Table Editor: Enable for current view"
+			],
+			[
+				"sspl",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"ever",
+				"Evernote: List recent notes"
+			],
+			[
+				"mp",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"Package Control: si",
+				"Package Control: List Packages"
+			],
+			[
+				"evernote",
+				"Evernote: List recent notes"
+			],
+			[
+				"live",
+				"AlignTab: Live Preview Mode"
+			],
+			[
+				"plain",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"ip",
+				"Package Control: Install Package"
+			],
+			[
+				"enab",
+				"Table Editor: Enable for current syntax"
+			],
+			[
+				"CSS",
+				"Set Syntax: CSS"
+			],
+			[
+				"",
+				"Build With: LaTeX - XeLaTeX"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"plt",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"del",
+				"File: Delete"
+			],
+			[
+				"pci",
+				"Package Control: Install Package"
+			],
+			[
+				"fe",
+				"Fetch: Manage"
+			],
+			[
+				"dele",
+				"File: Delete"
+			],
+			[
+				"snipn",
+				"Snippet: Function"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"palin",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"pla",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"m",
+				"Markdown Preview: Preview in Browser"
+			]
+		],
+		"width": 536.0
+	},
+	"console":
+	{
+		"height": 160.0,
+		"history":
+		[
+			"path",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/Projects/127.0.0.1/aystore"
+	],
+	"file_history":
+	[
+		"/E/Projects/127.0.0.1/ten-year-predict/less/reset.less",
+		"/E/Projects/127.0.0.1/ten-year-predict/js/um-data.js",
+		"/E/Projects/127.0.0.1/ten-year-predict/js/ad-data.js",
+		"/E/Projects/127.0.0.1/ten-year-predict/less/adum-data.less",
+		"/E/Projects/127.0.0.1/ten-year-predict/less/prod-data.less",
+		"/E/Projects/127.0.0.1/ten-year-predict/less/inco-data.less",
+		"/E/Projects/127.0.0.1/ten-year-predict/js/index.js",
+		"/E/Projects/127.0.0.1/ten-year-predict/js/inco-data.js",
+		"/E/Projects/127.0.0.1/ten-year-predict/js/inco-input.js",
+		"/E/Projects/127.0.0.1/ten-year-predict/sncomp/step2.jsp",
+		"/E/Projects/127.0.0.1/ten-year-predict/sncomp/step3-table-data.html",
+		"/E/Projects/127.0.0.1/ten-year-predict/sncomp/step4.jsp",
+		"/E/Projects/127.0.0.1/ten-year-predict/sncomp/step3.jsp",
+		"/E/Projects/127.0.0.1/ten-year-predict/js/recr-data.js",
+		"/E/Projects/127.0.0.1/ten-year-predict/js/recr-input.js",
+		"/E/Projects/127.0.0.1/ten-year-predict/js/prod-input.js",
+		"/E/Projects/127.0.0.1/ten-year-predict/inco-data.html",
+		"/E/Projects/127.0.0.1/ten-year-predict/sncomp/js/jindunew.js",
+		"/E/Projects/127.0.0.1/ten-year-predict/less/recr-data.less",
+		"/E/Projects/127.0.0.1/ten-year-predict/prod-input.html",
+		"/E/Projects/127.0.0.1/ten-year-predict/prod-data.html",
+		"/E/Projects/127.0.0.1/ten-year-predict/ad-data.html",
+		"/E/Projects/127.0.0.1/ten-year-predict/um-data.html",
+		"/E/Projects/127.0.0.1/ten-year-predict/recr-data.html",
+		"/E/Projects/127.0.0.1/ten-year-predict/flatui/docs/examples/forms.html",
+		"/E/Projects/127.0.0.1/ten-year-predict/flatui/docs/examples/buttons.html",
+		"/E/Projects/127.0.0.1/ten-year-predict/index.html",
+		"/E/Projects/127.0.0.1/ten-year-predict/inco-input.html",
+		"/E/Projects/127.0.0.1/ten-year-predict/js/common.js",
+		"/E/Projects/127.0.0.1/ten-year-predict/recr-input.html",
+		"/E/Projects/127.0.0.1/ten-year-predict/css/para-input.css",
+		"/E/Projects/127.0.0.1/Practice/JavaScript/splitSearchString.html",
+		"/D/Program Files/Sublime Text 3/Data/Packages/Pretty JSON/Pretty JSON.sublime-settings",
+		"/E/Projects/127.0.0.1/ten-year-predict/less/para-input.less",
+		"/E/Projects/127.0.0.1/ten-year-predict/js/prod-data.js",
+		"/E/Projects/127.0.0.1/ten-year-predict/sncomp/step5.jsp",
+		"/E/Projects/127.0.0.1/ten-year-predict/flatui/dist/index.html",
+		"/E/Projects/127.0.0.1/ten-year-predict/sncomp/step4-table-data.html",
+		"/E/Projects/127.0.0.1/ten-year-predict/sncomp/step5-table-data.html",
+		"/E/Projects/127.0.0.1/ten-year-predict/sncomp/step4-table-input.html",
+		"/E/Projects/127.0.0.1/ten-year-predict/sncomp/step6.jsp",
+		"/E/Projects/127.0.0.1/ten-year-predict/less/index.less",
+		"/E/Projects/127.0.0.1/ten-year-predict/less/recr-input.less",
+		"/E/Projects/127.0.0.1/ten-year-predict/css/buttons.css",
+		"/E/Projects/127.0.0.1/ten-year-predict/flatui/README.md",
+		"/E/Projects/127.0.0.1/ten-year-predict/Flat-UI-master/README.md",
+		"/E/Projects/127.0.0.1/ten-year-predict/sncomp/step6-table-data.html",
+		"/D/Program Files/Sublime Text 3/Data/Packages/User/ExpandRegion.sublime-settings",
+		"/D/Program Files/Sublime Text 3/Data/Packages/ExpandRegion/ExpandRegion.sublime-settings",
+		"/E/Projects/127.0.0.1/十年规划测算/js/prod-data.js",
+		"/E/Projects/127.0.0.1/十年规划测算/js/recr-data.js",
+		"/E/Projects/127.0.0.1/十年规划测算/sncomp/step3.jsp",
+		"/E/Projects/127.0.0.1/十年规划测算/recr-data.html",
+		"/E/Projects/127.0.0.1/十年规划测算/inco-data.html",
+		"/E/Projects/127.0.0.1/十年规划测算/less/inco-data.less",
+		"/E/Projects/127.0.0.1/十年规划测算/js/inco-data.js",
+		"/C/Users/Administrator.SKYUSER-OUDQBM1/Desktop/test (2).html",
+		"/E/Projects/127.0.0.1/地理位置测试.html",
+		"/E/Projects/127.0.0.1/十年规划测算/js/inco-input.js",
+		"/E/Projects/127.0.0.1/十年规划测算/js/recr-input.js",
+		"/E/Projects/127.0.0.1/十年规划测算/js/prod-input.js",
+		"/E/Projects/127.0.0.1/十年规划测算/less/recr-input.less",
+		"/E/Projects/127.0.0.1/十年规划测算/less/prod-input.less",
+		"/E/Projects/127.0.0.1/十年规划测算/less/reset.less",
+		"/E/Projects/127.0.0.1/十年规划测算/less/prod-data.less",
+		"/E/Projects/127.0.0.1/十年规划测算/less/para-input.less",
+		"/E/Projects/127.0.0.1/单页面测试/index.html",
+		"/E/Projects/127.0.0.1/十年规划测算/less/adum-data.less",
+		"/E/Projects/127.0.0.1/十年规划测算/ad-data.html",
+		"/E/Projects/127.0.0.1/十年规划测算/um-data.html",
+		"/E/Projects/127.0.0.1/十年规划测算/prod-data.html",
+		"/E/Projects/127.0.0.1/十年规划测算/prod-input.html",
+		"/E/Projects/127.0.0.1/TenYearPredict/readme.txt",
+		"/C/Users/Administrator.SKYUSER-OUDQBM1/Desktop/tmp",
+		"/C/Users/Administrator.SKYUSER-OUDQBM1/Desktop/test.html",
+		"/E/Projects/127.0.0.1/Practice/JavaScript/Learning jQuery/source/05/05.js",
+		"/E/Projects/127.0.0.1/Practice/JavaScript/Learning jQuery/source/05/index.html",
+		"/E/Projects/127.0.0.1/十年规划测算/income.html",
+		"/E/Projects/127.0.0.1/十年规划测算/css/income.css",
+		"/D/Program Files/Sublime Text 3/Data/Packages/CSS/CSS.sublime-syntax",
+		"/E/Projects/127.0.0.1/十年规划测算/income-input.html",
+		"/E/Projects/127.0.0.1/十年规划测算/css/reset.css",
+		"/E/Projects/127.0.0.1/十年规划测算/css/index.css",
+		"/E/Projects/127.0.0.1/十年规划测算/css/income-input.css",
+		"/E/Projects/127.0.0.1/十年规划测算/index.html",
+		"/C/Users/Administrator.SKYUSER-OUDQBM1/Desktop/1.txt",
+		"/E/Projects/127.0.0.1/手机下拉菜单测试/dropdownlist.html",
+		"/F/新电脑配置转移/httpd.conf",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/D/Apache24/conf/httpd.conf",
+		"/C/Users/Administrator.SKYUSER-OUDQBM1/Desktop/aystore.lnk",
+		"/E/Projects/127.0.0.1/aystore/资料/文章管理系统.md",
+		"/C/Users/CodeOfShadow/Desktop/test.css",
+		"/C/Users/CodeOfShadow/Desktop/响应式布局测试.html",
+		"/E/Projects/127.0.0.1/aystore/setting.html",
+		"/E/Projects/127.0.0.1/aystore/mine.html",
+		"/E/Projects/127.0.0.1/aystore/css/reset.less",
+		"/E/Projects/127.0.0.1/aystore/city.html",
+		"/E/Projects/127.0.0.1/aystore/css/index.less",
+		"/E/Projects/127.0.0.1/aystore/index1703191527.html",
+		"/E/Projects/127.0.0.1/aystore/js/artdetail.js",
+		"/E/Projects/127.0.0.1/aystore/artdetail.html",
+		"/E/Projects/127.0.0.1/aystore/js/index.js",
+		"/G/新电脑配置转移/新建文本文档.md",
+		"/E/Projects/127.0.0.1/MyResume/Resume.tex",
+		"/D/Program Files/Sublime Text 3/Data/Packages/Vintage/Default.sublime-keymap",
+		"/E/Projects/127.0.0.1/aystore/css/reset.css",
+		"/D/Program Files/Sublime Text 3/Data/Packages/Vintage/Default (Windows).sublime-keymap",
+		"/C/Users/CodeOfShadow/Desktop/test.html",
+		"/E/Projects/127.0.0.1/aystore/css/topbar-style1.css",
+		"/E/Projects/127.0.0.1/aystore/less",
+		"/E/Projects/127.0.0.1/aystore/css/city.less",
+		"/E/Projects/127.0.0.1/aystore/js/city.js",
+		"/E/Projects/127.0.0.1/aystore/css/city.css",
+		"/E/Projects/127.0.0.1/blog/css/btn-sidebartoggle.less",
+		"/D/Vim/mswin.vim",
+		"/D/Vim/vim-multiple-cursors-master/README.md",
+		"/E/Library/Vim/Vim 单词缩写.txt",
+		"/E/Projects/127.0.0.1/error-log/php-error.log",
+		"/D/Program Files/php-7.1.1/php.ini",
+		"/E/Projects/127.0.0.1/aystore/tp5/public/index.php",
+		"/E/Projects/127.0.0.1/aystore/ThinkPHP3.1.2_Core/App/Conf/user.php",
+		"/E/Projects/127.0.0.1/aystore/ThinkPHP3.1.2_Core/ThinkPHP/Lib/Template/TagLib.class.php",
+		"/E/Projects/127.0.0.1/aystore/tp5/thinkphp/library/think/Template.php",
+		"/D/Vim/vimfiles/bundle/vundle/README.md",
+		"/D/Vim/vimfiles/bundle/Vundle.vim/README_ZH_CN.md",
+		"/D/Vim/vimfiles/bundle/Vundle.vim/autoload/vundle.vim",
+		"/E/Projects/127.0.0.1/aystore/ThinkPHP3.1.2_Core/ThinkPHP/Lib/Template/ThinkTemplate.class.php"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 96.0,
+		"where_history":
+		[
+			"*/ten-year-predict/*.less,-*/flatui/*,-*/sncomp/*",
+			"*/ten-year-predict/*.css,-*/flatui/*,-*/sncomp/*",
+			"*/ten-year-predict/*.html,-*/flatui/*,-*/sncomp/*",
+			"*/ten-year-predict/*.html",
+			"*/ten-year-predict/*.html*",
+			"*\\ten-year-predict\\*.html*",
+			"*\\ten-year-predict\\*.html",
+			"ten-year-predict\\*.html",
+			"\"E:\\Projects\\127.0.0.1\\ten-year-predict\\*.html\"",
+			"E:\\Projects\\127.0.0.1\\ten-year-predict\\*.html",
+			"E:\\Projects\\127.0.0.1\\ten-year-predict\\.html",
+			"<open folders>/*.html",
+			"*.html",
+			"E:/Projects/127.0.0.1/ten-year-predict/*.html",
+			"E:\\Projects\\127.0.0.1\\ten-year-predict\\*.html",
+			"E:\\Projects\\127.0.0.1\\ten-year-predict\\,*.html",
+			"E:\\Projects\\127.0.0.1\\ten-year-predict\\*.html",
+			"E:\\Projects\\127.0.0.1\\ten-year-predict\\js,-jquery.js",
+			"E:\\Projects\\127.0.0.1\\ten-year-predict\\*.html",
+			"E:\\Projects\\127.0.0.1\\ten-year-predict\\",
+			"E:\\Projects\\127.0.0.1\\ten-year-predict\\*.html",
+			"E:\\Projects\\127.0.0.1\\ten-year-predict\\js,-jquery.js",
+			"E:\\Projects\\127.0.0.1\\ten-year-predict\\js",
+			"E:\\Projects\\127.0.0.1\\ten-year-predict"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"eq",
+			"txt-price",
+			" table-striped",
+			")",
+			"(",
+			"script",
+			"a",
+			"window.location",
+			"<script>",
+			"<script src=\"js/jquery.js\"></script>",
+			"this",
+			"window.location",
+			"window.location.href = $(this).\"inco-data.html\";",
+			"button",
+			"href",
+			"window.location",
+			"区间：",
+			"）",
+			"（",
+			"\"tbl-head\"",
+			"<table>",
+			"font-size:",
+			"<table>",
+			"font-size:",
+			"bottom",
+			"font-size",
+			" row",
+			"myinfo",
+			"zxdad",
+			"zxum",
+			",",
+			";",
+			"main ",
+			"h4",
+			"//",
+			"/",
+			"+",
+			"*",
+			"=",
+			"double ",
+			"(\"f_",
+			";",
+			" = ",
+			",",
+			"data-zzly_m",
+			"h13",
+			"sum",
+			"conv(sum",
+			"))",
+			"zxzrs",
+			";",
+			"gljt",
+			"10",
+			"12",
+			"else",
+			";",
+			"var ",
+			"double",
+			"float",
+			"Float.",
+			"Float",
+			"float",
+			"Float",
+			"float",
+			"Float",
+			"float",
+			"Float",
+			"float",
+			"Float",
+			"float",
+			"Float",
+			"float",
+			"Float",
+			"float",
+			"Float",
+			"float",
+			"Float",
+			"float",
+			"96",
+			").",
+			"TableWith",
+			"TableWithJson",
+			"jsonData",
+			"um_um",
+			"m_um",
+			",",
+			"m_as",
+			"m_zxzrs",
+			"jsonData",
+			"jqObj",
+			"fyc_json",
+			"zxb",
+			"zxbData",
+			"zxb",
+			"total",
+			"um_um",
+			"fyc",
+			"hj",
+			"set",
+			"rjfyc",
+			"37",
+			"zxas",
+			"get",
+			"local",
+			"rank",
+			"<%@",
+			">\n",
+			"index",
+			"el",
+			"name",
+			"');\n",
+			"li + li",
+			"weui_btn",
+			"icon-cancel",
+			"safe-success",
+			"safe_success",
+			"success-circle",
+			"success_circle",
+			"icon-info",
+			"weui-icon-success",
+			"weui-icon_success",
+			"weui-icon",
+			"weui_icon",
+			"area",
+			"button-sp-area",
+			"button-sp_area",
+			"button_sp_area",
+			"-sp_"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"\\n",
+			"\\1",
+			"\\1\\2",
+			"\\1",
+			"\\1\\2",
+			"\\1",
+			",",
+			"\\1\\t\\3"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 172.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.latextools":
+	{
+		"height": 285.0
+	},
+	"output.markdown":
+	{
+		"height": 130.0
+	},
+	"output.vi_out":
+	{
+		"height": 142.0
+	},
+	"pinned_build_system": "",
+	"project": "aystore.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"incoda",
+				"inco-data.html"
+			],
+			[
+				"prod-input.html",
+				"prod-input.html"
+			],
+			[
+				"recr-input",
+				"js\\recr-input.js"
+			],
+			[
+				"prod-input.",
+				"prod-input.html"
+			],
+			[
+				"prod-input.js",
+				"js\\prod-input.js"
+			],
+			[
+				"inco",
+				"inco-data.html"
+			],
+			[
+				"inco-data",
+				"js\\inco-data.js"
+			],
+			[
+				"inco-in",
+				"inco-input.html"
+			],
+			[
+				"prod",
+				"js\\prod-input.js"
+			],
+			[
+				"prod-in",
+				"prod-input.html"
+			],
+			[
+				"par",
+				"css\\para-input.css"
+			],
+			[
+				"inde",
+				"css\\index-item.css"
+			],
+			[
+				"inc",
+				"css\\index-item.css"
+			],
+			[
+				"main",
+				"E:\\Projects\\艾草项目\\hc_style000\\hcc\\main.css"
+			],
+			[
+				"index",
+				"E:\\Projects\\艾草项目\\hc_style000\\hcc\\index.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"E:\\Projects\\127.0.0.1\\ten-year-predict\\ten-year-predict.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 261.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
