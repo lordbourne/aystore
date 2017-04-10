@@ -35,7 +35,7 @@ img {
   height: 0px;
 }
 body {
-  font-family: "方正兰亭纤黑_GBK", "Microsoft YaHei";
+  font-family: "方正兰亭纤黑_GBK", "Microsoft YaHei", "serif";
   font-size: 14px;
   line-height: 1.42867143;
   /* 或 line-height: 20px;*/
