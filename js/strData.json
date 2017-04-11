@@ -3,13 +3,16 @@
   "errorCode": "0",
   "data": [
     {
+      "strId": "123",
       "strCity": "成都",
       "strDistrict": "成华区",
       "strThumbnail": "img/shop1.jpg",
       "strName": "成都艾瑞建设路保健养生店",
       "ordStatus": 0,
-      "strLink": "str-link/store1.html",
+      "strLink": "strlink/store1.html",
       "avgPrice": 200,
+      "srvInfo": "专业技术服务提供服务，智能艾灸床 5 张，艾灸、刮痧、洗脚、按摩、保健、亚健康、养生。",
+      "full": 0,
       "strServices": [
         {
           "srvName": "艾灸",
@@ -41,13 +44,16 @@
       "strAddress": "建设北路二段44号脸红小区5栋12号"
     },
     {
+      "strId": "234",
       "strCity": "成都",
       "strDistrict": "成华区",
       "strThumbnail": "img/shop1.jpg",
       "strName": "成都艾瑞建设路保健养生店",
       "ordStatus": 1,
-      "strLink": "str-link/store2.html",
+      "strLink": "strlink/store2.html",
       "avgPrice": 300,
+      "srvInfo": "专业技术服务提供服务，智能艾灸床 5 张，艾灸、刮痧、洗脚、按摩、保健、亚健康、养生。",
+      "full": 1,
       "strServices": [
         {
           "srvName": "艾灸",
@@ -69,13 +75,16 @@
       "strAddress": "建设北路二段55号科大小区6栋25号"
     },
     {
+      "strId": "345",
       "strCity": "成都",
       "strDistrict": "成华区",
       "strThumbnail": "img/shop1.jpg",
       "strName": "成都艾瑞建设路保健养生店",
       "ordStatus": 0,
-      "strLink": "str-link/store3.html",
+      "strLink": "strlink/store3.html",
       "avgPrice": 200,
+      "srvInfo": "专业技术服务提供服务，智能艾灸床 5 张，艾灸、刮痧、洗脚、按摩、保健、亚健康、养生。",
+      "full": 0,
       "strServices": [
         {
           "srvName": "艾灸",
@@ -97,13 +106,16 @@
       "strAddress": "建设北路二段44号脸红小区5栋12号"
     },
     {
+      "strId": "456",
       "strCity": "成都",
       "strDistrict": "成华区",
       "strThumbnail": "img/shop1.jpg",
       "strName": "成都艾瑞建设路保健养生店",
       "ordStatus": 0,
-      "strLink": "str-link/store4.html",
+      "strLink": "strlink/store4.html",
       "avgPrice": 800,
+      "srvInfo": "专业技术服务提供服务，智能艾灸床 5 张，艾灸、刮痧、洗脚、按摩、保健、亚健康、养生。",
+      "full": 1,
       "strServices": [
         {
           "srvName": "艾灸",

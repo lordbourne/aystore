@@ -112,7 +112,7 @@ $(document).ready(function() {
             } else {
               $(this).find('[data-ordStatus]').removeClass('ordered').html('预订');
             }
-            $(this).find('[data-ordStatus]')[0].href =
+            $(this).find('[data-ordStatus]')[0].href = strItem.strLink;
             $(this).find('[data-avgPrice]').html(strItem.avgPrice);
             var $srvList = $(this).find('[data-service]');
             var strServices = strItem.strServices;

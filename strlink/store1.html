@@ -167,31 +167,27 @@
     <a class="left-icon-back" onclick="goback()">
       <img src="img/back.png" alt="back.jpg">
     </a>
-    成都艾瑞建设路保健养生店
+    <span>{{strName}}</span>
   </div>
   <div id="container">
-    <div class="store-pic">
+    <div class="store-pic banner">
     </div>
     <div class="store-info">
       <img class="icon" src="img/location-yellow.png" alt="">
-      <p class="servie">
-        专业技术服务提供服务，智能艾灸床 5 张，艾灸、刮痧、洗脚、按摩、保健、亚健康、养生。
-      </p>
-      <p class="address">
-        成都市成华区建设北路二段 44 号玉明小区 5 栋 12 号
-      </p>
+      <p class="servie">{{srvInfo}}</p>
+      <p class="address">{{strAddress}}</p>
     </div>
     <div class="order-info">
-      <div class="icon-man">
-      </div>
+      <div class="icon-man"></div>
+      <!-- 根据返回的字段 full 设置其隐藏与否, 而求如果满的话，后面表单都无效，设为禁用状态 -->
       <div class="timepart clearfloat">
         <img class="icon" src="img/calendar.png" alt="">
         <div class="title">
           预定时间：
         </div>
-        <div class="time">
-          2016-01-22 10:30
-        </div>
+        <p class="datep time">
+          <input class="datainp" id="dateinfo" type="text" placeholder="" readonly>
+        </p>
       </div>
       <div class="ayservicepart">
         <img class="icon" src="img/checked2.png" alt="">
@@ -252,90 +248,92 @@
       </div>
     </div>
     <!-- <div class="part2 font1">
-			<div class="title1">
-				<div class="left">
-					<span class="font2">预定时间：</span>
-					<span>2016-01-22 10:30</span>
-				</div>
-				<div class="rightmost">
-					<a href=""><i class="icon-calendar"></i></a>
-				</div>
-			</div>
+      <div class="title1">
+        <div class="left">
+          <span class="font2">预定时间：</span>
+          <span>2016-01-22 10:30</span>
+        </div>
+        <div class="rightmost">
+          <a href=""><i class="icon-calendar"></i></a>
+        </div>
+      </div>
 
-			<div class="title2">
-				<div class="font2 left">艾灸服务费</div>
-				<div class="rightmost">
-					<input type="checkbox"></input>
-				</div>
-			</div>
+      <div class="title2">
+        <div class="font2 left">艾灸服务费</div>
+        <div class="rightmost">
+          <input type="checkbox"></input>
+        </div>
+      </div>
 
-			<div class="subtitle2">
-				<ul>
-					<li>
-						<div class="left">
-							周一至周五 8:00 - 12:00
-						</div>
-						<div class="right">
-							<span class="font3">80</span> 元/小时
-						</div>
-					</li>
-					<li>
-						<div class="left">
-							周一至周五 12:00 - 22:00
-						</div>
-						<div class="right">
-							<span class="font3">100</span> 元/小时
-						</div>
-					</li>
-					<li>
-						<div class="left">
-							周六至周日 节假日全天
-						</div>
-						<div class="right">
-							<span class="font3">120</span> 元/小时
-						</div>
-					</li>
-				</ul>
-			</div>
+      <div class="subtitle2">
+        <ul>
+          <li>
+            <div class="left">
+              周一至周五 8:00 - 12:00
+            </div>
+            <div class="right">
+              <span class="font3">80</span> 元/小时
+            </div>
+          </li>
+          <li>
+            <div class="left">
+              周一至周五 12:00 - 22:00
+            </div>
+            <div class="right">
+              <span class="font3">100</span> 元/小时
+            </div>
+          </li>
+          <li>
+            <div class="left">
+              周六至周日 节假日全天
+            </div>
+            <div class="right">
+              <span class="font3">120</span> 元/小时
+            </div>
+          </li>
+        </ul>
+      </div>
 
-			<div class="title3">
-				<div class="font2">其他保健服务费</div>
-			</div>
+      <div class="title3">
+        <div class="font2">其他保健服务费</div>
+      </div>
 
-			<div class="subtitle3">
-				<ul>
-					<li>
-						<div class="left">
-							按摩
-						</div>
-						<div class="right">
-							<span class="font3">80</span> 元/小时
-						</div>
-						<div class="rightmost">
-							<input type="checkbox" name="">
-						</div>
-					</li>
-					<li>
-						<div class="left"></div>
-							按摩
-						<div class="right">
-							<span class="font3">80</span> 元/小时
-						</div>
-						<div class="rightmost">
-							<input type="checkbox" name="">
-						</div>
-					</li>
-				</ul>
-			</div>
+      <div class="subtitle3">
+        <ul>
+          <li>
+            <div class="left">
+              按摩
+            </div>
+            <div class="right">
+              <span class="font3">80</span> 元/小时
+            </div>
+            <div class="rightmost">
+              <input type="checkbox" name="">
+            </div>
+          </li>
+          <li>
+            <div class="left"></div>
+              按摩
+            <div class="right">
+              <span class="font3">80</span> 元/小时
+            </div>
+            <div class="rightmost">
+              <input type="checkbox" name="">
+            </div>
+          </li>
+        </ul>
+      </div>
 
-		</div> -->
+    </div> -->
   </div>
   <div id="botbar">
     <a href="pay.html">
-			预定
-		</div>
-	</div>
+      预定
+    </div>
+  </div>
 
-	<script type="text/javascript" src="js/global.js"></script>
+  <script src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/global.js"></script>
+  <script src="js/store-info.js"></script>
 </body>
 </html>
