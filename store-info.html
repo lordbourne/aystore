@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>预定页</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/topbar-style2.css">
+  <link rel="stylesheet" href="css/botbar-style2.css">
+  <link rel="stylesheet" href="css/tpl-storeinfo.css">
+
+</head>
+
+<body>
+  <div id="topbar">
+    <a class="left-icon-back" onclick="goback()">
+      <img src="img/back.png" alt="back.jpg">
+    </a>
+    <span>{{strName}}</span>
+  </div>
+
+  <div id="container">
+
+  </div>
+
+  <div id="botbar">
+    <a href="pay.html" data-full><!-- 人满就不能预订 -->
+      预定
+    </div>
+  </div>
+
+  <script src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/global.js"></script>
+  <script src="js/store-info.js"></script>
+</body>
+</html>

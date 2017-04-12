@@ -1,0 +1,44 @@
+{
+  "full": 1,
+  "strPicture": [
+    "img/shop1.jpg",
+    "img/shop2.jpg",
+    "img/shop3.jpg"
+  ],
+  "srvInfo": "专业技术服务提供服务，智能艾灸床 5 张，艾灸、刮痧、洗脚、按摩、保健、亚健康、养生。",
+  "strCity": "成都",
+  "strDistrict": "成华区",
+  "strAddress": "建设北路二段55号科大小区6栋25号",
+  "aySrvPrive": [
+    {
+      "weekday": "周一至周五",
+      "srvTime": "08:00-12:00",
+      "price": 80,
+      "unit": "元/小时"
+    },
+    {
+      "weekday": "周一至周五",
+      "srvTime": "12:00-22:00",
+      "price": 100,
+      "unit": "元/小时"
+    },
+    {
+      "weekday": "周六至周日",
+      "srvTime": "节假日全天",
+      "price": 120,
+      "unit": "元/小时"
+    },
+  ],
+  "otherSrvPrice": [
+    {
+      "srvName": "按摩",
+      "price": 80,
+      "unit": "元/小时"
+    },
+    {
+      "srvName": "艾灸洗脚",
+      "price": 50,
+      "unit": "元/小时"
+    }
+  ]
+}
