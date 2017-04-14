@@ -6,37 +6,121 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>预定页</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="css/checkbix.css"> -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/topbar-style2.css">
   <link rel="stylesheet" href="css/botbar-style2.css">
   <link rel="stylesheet" href="css/store-info.css">
-
 </head>
 
 <body>
   <div id="topbar">
-    <a class="left-icon-back" onclick="goback()">
+    <a class="left-icon-back goback">
       <img src="img/back.png" alt="back.jpg">
     </a>
-    <span>{{strName}}</span>
+    <span class="name"></span>
   </div>
-
   <div id="container">
-    <!-- Bnnner 部分 -->
-    <section class="store-pic" id="banner">
-      <!-- <img src="img/shop1.jpg" alt=""> -->
+    <!-- banner 部分：店的大图 -->
+    <section class="sec-banner">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <!-- <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li> -->
+          <!-- <li data-target="#carousel-example-generic" data-slide-to="1"></li> -->
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <!-- <div class="item active">
+            <img src="" alt="...">
+            <div class="carousel-caption">
+            </div>
+          </div> -->
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- intro 部分：店的简介部分 -->
+    <section class="sec-intro store-info">
+      <img class="icon" src="img/location-yellow.png" alt="">
+      <p class="intro servie"></p>
+      <p class="address"></p>
+    </section>
+    <!-- 服务价格与选择 -->
+    <section class="sec-order order-info">
+      <!-- 满员图标，根据返回的字段 full 设置其隐藏与否, 而求如果满的话，后面表单都无效，设为禁用状态 -->
+      <div class="icon-full icon-man"></div>
+      <!-- 日期时间选择 -->
+      <section class="sec-date timepart clearfloat">
+        <div class="title">预定时间：</div>
+        <p class="datep time">
+          <input class="datainp" id="dateinput" type="text" placeholder="" readonly>
+        </p>
+        <img class="icon" src="img/calendar.png" alt="">
+      </section>
+      <!-- 主服务 -->
+      <section class="sec-aySrvPrice ayservicepart">
+        <div class="title">
+          艾灸服务费
+        </div>
+        <ul class="">
+        </ul>
+        <div class="icon "></div>
+        <!-- <input id="myothercheckbox" type="checkbox" class="icon checkbix" data-text="Checkbix. Large, checked" data-size="large"> -->
+      </section>
+      <!-- 其他服务 -->
+      <setion class="sec-otherSrvPrice otherservicepart">
+        <div class="title">
+          其他保健服务费
+        </div>
+        <ul>
+          <li class="clearfloat">
+            <img class="icon" src="img/checked1.png" alt="">
+            <div class="service">
+              按摩
+            </div>
+            <div class="price">
+              80 元/小时
+            </div>
+          </li>
+          <li class="clearfloat">
+            <img class="icon" src="img/checked1.png" alt="">
+            <div class="service">
+              按摩
+            </div>
+            <div class="price">
+              80 元/小时
+            </div>
+          </li>
+        </ul>
+      </setion>
     </section>
   </div>
-
   <div id="botbar">
-    <a href="pay.html" data-full><!-- 人满就不能预订 -->
+    <a href="pay.html" data-full>
+      <!-- 人满就不能预订 -->
       预定
-    </div>
+  </div>
   </div>
 
+
   <script src="js/jquery.js"></script>
-  <script src="js/jquery.cycle.js"></script>
   <script src="js/global.js"></script>
   <script src="js/store-info.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  </script>
+  <script src="js/jedate.js"></script>
+  <!-- <script src="js/checkbix.js"></script> -->
 </body>
+
 </html>

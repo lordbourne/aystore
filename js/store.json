@@ -1,15 +1,16 @@
 {
   "full": 1,
+  "strName": "成都艾瑞建设路保健养生店",
   "strPicture": [
     "img/shop1.jpg",
     "img/shop2.jpg",
     "img/shop3.jpg"
   ],
-  "srvInfo": "专业技术服务提供服务，智能艾灸床 5 张，艾灸、刮痧、洗脚、按摩、保健、亚健康、养生。",
+  "srvIntro": "专业技术服务提供服务，智能艾灸床 5 张，艾灸、刮痧、洗脚、按摩、保健、亚健康、养生。",
   "strCity": "成都",
   "strDistrict": "成华区",
   "strAddress": "建设北路二段55号科大小区6栋25号",
-  "aySrvPrive": [
+  "aySrvPrice": [
     {
       "weekday": "周一至周五",
       "srvTime": "08:00-12:00",
