@@ -117,3 +117,7 @@
 .order-info .otherservicepart ul li .price {
   float: right;
 }
+// 动态添加的样式
+.checked1 {
+  background-image: ;
+}
