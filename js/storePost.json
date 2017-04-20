@@ -1,0 +1,22 @@
+{
+  "custId": "3d2er2f23",
+  "ordTime": "2017-04-11 17:27:43",
+  "aySrvPrice": {
+    // 主服务的时间段的 id
+    "id": 3,
+    "num": 2
+  },
+
+  "otherSrvPrice": [
+    {
+      // 其他服务的 id
+      "id": 1,
+      "num": 1
+    },
+    {
+      // 其他服务的 id
+      "id": 3,
+      "num": 2
+    }
+  ]
+}
