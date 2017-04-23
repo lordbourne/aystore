@@ -6,7 +6,7 @@
       "strId": "123",
       "strCity": "成都",
       "strDistrict": "成华区",
-      "strThumbnail": "img/shop1.jpg",
+      "strThumbnail": "http://i2.muimg.com/589268/8aefeb670174ad96t.jpg",
       "strName": "成都艾瑞建设路保健养生店",
       "ordStatus": 0,
       "strLink": "strlink/store1.html",
@@ -28,16 +28,6 @@
           "srvName": "针灸",
           "srvPrice": "",
           "srvUnit": ""
-        },
-        {
-          "srvName": "艾灸",
-          "srvPrice": 80,
-          "srvUnit": "元/小时"
-        },
-        {
-          "srvName": "艾灸",
-          "srvPrice": 80,
-          "srvUnit": "元/小时"
         }
       ],
       "strMap": "",
@@ -47,7 +37,7 @@
       "strId": "234",
       "strCity": "成都",
       "strDistrict": "成华区",
-      "strThumbnail": "img/shop1.jpg",
+      "strThumbnail": "http://i2.muimg.com/589268/d701689c5fc47505t.jpg",
       "strName": "成都艾瑞建设路保健养生店",
       "ordStatus": 1,
       "strLink": "strlink/store2.html",
@@ -78,7 +68,7 @@
       "strId": "345",
       "strCity": "成都",
       "strDistrict": "成华区",
-      "strThumbnail": "img/shop1.jpg",
+      "strThumbnail": "http://i2.muimg.com/589268/2979d002bc08463bt.jpg",
       "strName": "成都艾瑞建设路保健养生店",
       "ordStatus": 0,
       "strLink": "strlink/store3.html",
@@ -109,7 +99,7 @@
       "strId": "456",
       "strCity": "成都",
       "strDistrict": "成华区",
-      "strThumbnail": "img/shop1.jpg",
+      "strThumbnail": "http://i2.muimg.com/589268/8aefeb670174ad96t.jpg",
       "strName": "成都艾瑞建设路保健养生店",
       "ordStatus": 0,
       "strLink": "strlink/store4.html",

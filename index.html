@@ -10,10 +10,13 @@
   <link rel="stylesheet" href="css/topbar-style1.css">
   <link rel="stylesheet" href="css/botbar-style1.css">
   <link rel="stylesheet" href="css/index-item.css">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/index.css">t
+
+  <link rel="stylesheet" href="css/article-style1.css">
+  <link rel="stylesheet" href="css/article-style2.css">
 </head>
 
-<body>
+<body ng-app="aystore">
   <header id="topbar">
     <a class="location-icon" href="city.html">
       <img src="img/location1.png">
@@ -23,24 +26,18 @@
     </div>
     <input class="searchbox" type="text" placeholder="找艾灸店、艾灸保健养生">
   </header>
-  <div id="container">
-  </div>
-  <div id="botbar">
-    <a href="index.html" class="left">
-      <img src="img/home-selected.jpg" alt="">
-      <div class="text text-selected">首页</div>
-    </a>
-    <a href="ayculture.html" class="center">
-      <img src="img/ay.jpg" alt="">
-      <div class="text">艾灸文化</div>
-    </a>
-    <a href="mine.html" class="right">
-      <img src="img/mine.jpg" alt="">
-      <div class="text">我的</div>
-    </a>
-  </div>
-  <script src="js/jquery.js"></script>
-  <script src="js/index.js"></script>
+
+  <div ui-view=""></div>
+  <!-- <div ui-view="ayculture"></div> -->
+  <!-- <div ui-view="mine"></div> -->
+
+
+
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="app.js"></script>
+  <!-- <script src="js/jquery.js"></script> -->
+  <!-- <script src="js/index.js"></script> -->
 </body>
 
 </html>
