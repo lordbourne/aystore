@@ -1,24 +1,6 @@
 'use strict';
 var aystore = angular.module('aystore', ['ui.router']);
-// aystore.config(['$routeProvider', function ($routeProvider) {
-//   $routeProvider
-//   .when('/', {
-//     templateUrl: 'tpl/home.html',
-//     controller: 'HomeController'
-//   })
-//   .when('/home', {
-//     templateUrl: 'tpl/home.html',
-//     controller: 'HomeController'
-//   })
-//   .when('/ayculture', {
-//     templateUrl: 'tpl/ayculture.html',
-//     controller: 'AycultureController'
-//   })
-//   .when('/mine', {
-//     templateUrl: 'tpl/mine.html',
-//     controller: 'MineController'
-//   });
-// }]);
+
 aystore.config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.when("", "/home");
   $stateProvider
@@ -58,6 +40,7 @@ aystore.controller('HomeController', function($rootScope, $scope, $http) {
       alert('error');
     });
 });
+
 // 文章页列表控制
 aystore.controller('AycultureController', function($rootScope, $scope, $http) {
   $http.get('data/art-data.json', {
