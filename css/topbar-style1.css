@@ -1,5 +1,4 @@
-/* 还有一些待测试的：输入框如何放入放大镜图标 */
-#topbar {
+#topbar-style1 {
   position: fixed;
   top: 0px;
   z-index: 1;
@@ -8,7 +7,7 @@
   font-family: "方正兰亭纤黑_GBK", "Microsoft YaHei", "serif";
   background-color: #19c5d3;
 }
-#topbar .location-icon {
+#topbar-style1 .location-icon {
   position: absolute;
   top: 50%;
   left: 10px;
@@ -16,16 +15,16 @@
   margin-top: -12px;
   /*border: 1px solid #000;*/
 }
-#topbar .location-icon img {
+#topbar-style1 .location-icon img {
   height: 100%;
 }
-#topbar .location-text {
+#topbar-style1 .location-text {
   margin-left: 37px;
   font-size: 14px;
   line-height: 40px;
   color: #fff;
 }
-#topbar .searchbox {
+#topbar-style1 .searchbox {
   position: absolute;
   left: 24.4%;
   top: 50%;
@@ -42,23 +41,9 @@
   font-size: 14px;
   border: none;
 }
-#topbar .searchbox:focus {
+#topbar-style1 .searchbox:focus {
   outline: none;
 }
-#topbar .searchbox::-webkit-input-placeholder {
+#topbar-style1 .searchbox::-webkit-input-placeholder {
   color: #fff;
 }
-/*opacity: 1;*/
-/* 不知有什么用 */
-/* 使用方法：
-<div id="topbar">
-	<a class="location-icon">
-		<img src="img/location1.jpg">
-	</a>
-	<div class="location-text">
-		成都
-	</div>
-	<input class="searchbox" type="text" placeholder="找艾灸店、艾灸保健养生">
-</div>
-
- */

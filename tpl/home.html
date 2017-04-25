@@ -1,30 +1,35 @@
-<ul class="container" ng-controller="HomeController">
-  <li class="store-item" ng-repeat="strItem in strItems">
-    <div class="item-box">
-      <div class="icon">
-        <img src="img/location-yellow.png" alt=""><!-- todo: 图标名字更换 -->
-      </div>
-      <div class="box-content clearfloat">
-        <img class="picture" ng-src="{{strItem.strThumbnail}}" alt="store picture">
-        <div class="name" ng-bind="strItem.strName"></div>
-        <div class="order clearfloat">
-          <a class="btn btn-small" href="store-info.html" ng-class="{0:'btn-blue', 1:'ordered'}[strItem.ordStatus]" ng-bind="{0:'预定', 1:'已预订'}[strItem.ordStatus]">
-          </a>
-          <span class="avg-price">
-            <span class="txt-number" ng-bind="strItem.avgPrice"></span> 人/次
-          </span>
-        </div>
-        <ul class="service">
-          <li ng-repeat="srvItem in strItem.strServices">
-            <span ng-bind="srvItem.srvName"></span>
-            <span ng-bind="srvItem.srvPrice" class="txt-number"></span>
-            <span ng-bind="srvItem.srvUnit"></span>
-          </li>
-        </ul>
-        <div class="address" ng-bind="strItem.strCity + strItem.strDistrict + strItem.strAddress"></div>
-      </div>
-    </div>
-  </li>
-</ul>
+<div ng-include="'tpl/topbar-style1.html'"></div>
 
-<div ng-include="'bot-menu.html'"></div>
+<div ng-controller="HomeController">
+  <ul class="strlist" id="strlist">
+    <li class="store-item" ng-repeat="strItem in strItems">
+      <div class="item-box">
+        <div class="icon">
+          <img src="img/location-yellow.png" alt=""><!-- todo: 图标名字更换 -->
+        </div>
+        <div class="box-content clearfloat">
+          <img class="picture" ng-src="{{strItem.strThumbnail}}" alt="store picture">
+          <div class="name" ng-bind="strItem.strName"></div>
+          <div class="order clearfloat">
+            <a class="btn btn-small" href="store-info.html" ng-class="{0:'btn-blue', 1:'ordered'}[strItem.ordStatus]" ng-bind="{0:'预定', 1:'已预订'}[strItem.ordStatus]">
+            </a>
+            <span class="avg-price">
+              <span class="txt-number" ng-bind="strItem.avgPrice"></span> 人/次
+            </span>
+          </div>
+          <ul class="service">
+            <li ng-repeat="srvItem in strItem.strServices">
+              <span ng-bind="srvItem.srvName"></span>
+              <span ng-bind="srvItem.srvPrice" class="txt-number"></span>
+              <span ng-bind="srvItem.srvUnit"></span>
+            </li>
+          </ul>
+          <div class="address" ng-bind="strItem.strCity + strItem.strDistrict + strItem.strAddress"></div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+<div ng-include="'tpl/botmenu.html'"></div>

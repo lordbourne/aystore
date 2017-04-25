@@ -1,0 +1,77 @@
+#strlist {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 100%;
+  background: #fff;
+}
+#strlist .first {
+  border-top: none !important;
+}
+#strlist .store-item {
+  padding-left: 10px;
+}
+#strlist .store-item .item-box {
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 25px;
+  border-top: 1px solid #d1d1d0;
+}
+#strlist .store-item .item-box .icon {
+  position: absolute;
+  top: 12px;
+  right: 7px;
+  height: 26px;
+}
+#strlist .store-item .item-box .icon img {
+  height: 100%;
+}
+#strlist .store-item .item-box .box-content .picture {
+  float: left;
+  height: 70px;
+  margin-bottom: 10px;
+}
+#strlist .store-item .item-box .box-content .picture img {
+  height: 100%;
+}
+#strlist .store-item .item-box .box-content .name {
+  padding-top: 5px;
+  padding-left: 118px;
+  font-size: 17px;
+  color: #2e2e2e;
+}
+#strlist .store-item .item-box .box-content .order {
+  margin-top: 14px;
+  padding-left: 118px;
+}
+#strlist .store-item .item-box .box-content .order .btn {
+  width: 140px;
+}
+#strlist .store-item .item-box .box-content .order .avg-price {
+  display: inline-block;
+  float: right;
+  margin-top: 7px;
+  font-size: 15px;
+  color: #2e2e2e;
+}
+#strlist .store-item .item-box .box-content .service {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #6d6d6d;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#strlist .store-item .item-box .box-content .service li {
+  float: left;
+  margin-right: 6px;
+}
+#strlist .store-item .item-box .box-content .address {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #6d6d6d;
+}
+#strlist .ordered {
+  background-color: #ffba00;
+  color: #fff;
+}

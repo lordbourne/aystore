@@ -50,9 +50,14 @@ aystore.controller('AycultureController', function($rootScope, $scope, $http) {
       },
       responseType: "json"
     })
-    .then(function(data) {
-      console.log(data);
-      $rootScope.artItems = data.data.data;
+    .then(function(res) {
+      // console.log(res);
+      $rootScope.artItems = res.data.data;
+      $scope.artItems = res.data.data;
+      $rootScope.type = res.data.data.artItems;
+      var type = $rootScope.artItems[0].type;
+      // console.log(type);
+      console.log($scope.artItems[0].thumbnail);
     }, function() {
       alert('error');
     });
