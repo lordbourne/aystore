@@ -1,0 +1,49 @@
+#artdetail {
+  margin: 40px 10px;
+  margin-bottom: 50px;
+  padding-top: 10px;
+}
+#artdetail .title {
+  font-size: 18px;
+  color: #121212;
+}
+#artdetail .info {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #6d6d6d;
+}
+#artdetail .info .date {
+  float: left;
+  margin-right: 13px;
+}
+#artdetail .info .author {
+  float: left;
+}
+#artdetail .info .collects {
+  float: right;
+  margin-right: 15px;
+}
+#artdetail .info .collects .ic-collects {
+  display: inline-block;
+  height: 14px;
+  margin-right: 5px;
+}
+#artdetail .info .likes {
+  float: right;
+}
+#artdetail .info .likes .ic-likes {
+  display: inline-block;
+  height: 14px;
+  margin-right: 5px;
+}
+#artdetail .content {
+  margin-bottom: 50px;
+  font-size: 16px;
+  line-height: 29px;
+  color: #636363;
+}
+#artdetail .content .picture {
+  width: 100%;
+  margin-bottom: 15px;
+}

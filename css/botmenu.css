@@ -29,6 +29,9 @@
 #botmenu .text-selected {
   color: #00c1d1;
 }
+#botmenu .ic-selected {
+  background-image: url(../img/);
+}
 /*#botbar .left .icon-selected {
     color: rgb(25, 197, 211);
 }*/

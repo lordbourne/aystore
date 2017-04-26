@@ -1,0 +1,76 @@
+#artlist {
+  margin-top: 38px;
+  margin-bottom: 50px;
+}
+#artlist .art-item {
+  margin-left: 15px;
+  padding: 12px 0px;
+  padding-right: 15px;
+  border-top: 1px solid #d1d1d0;
+}
+#artlist .art-item .item-content {
+  display: block;
+  width: 100%;
+}
+#artlist .art-item .item-content .title {
+  font-size: 16px;
+  color: #2e2e2e;
+}
+#artlist .art-item .item-content .info {
+  margin-right: 130px;
+}
+#artlist .art-item .item-content .info > li {
+  font-size: 14px;
+  color: #6d6d6d;
+  display: inline-block;
+  width: 30%;
+}
+#artlist .art-item .item-content1 .title {
+  margin-right: 130px;
+}
+#artlist .art-item .item-content1 .info {
+  margin-top: 10px;
+}
+#artlist .art-item .item-content1 .picture {
+  float: right;
+  height: 70px;
+}
+#artlist .art-item .item-content1 .picture img {
+  height: 100%;
+}
+#artlist .art-item .item-content2 .picture {
+  margin-top: 5px;
+}
+#artlist .art-item .item-content2 .picture > li {
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 33%;
+  padding: 0 1px;
+}
+#artlist .art-item .item-content2 .picture > li img {
+  width: 100%;
+}
+/* 使用示例：
+<a class="article-style1 block" href="artdetail.html">
+  <div class="left">
+    <div class="title">
+      艾灸能减肥不？艾灸通过艾绒燃烧发热
+    </div>
+    <div class="info">
+      <div class="keyword">
+        艾绒哥
+      </div>
+      <div class="likes">
+        <span class="text-orange">80</span> 点赞
+      </div>
+      <div class="comments">
+        <span class="text-orange">30</span> 评论
+      </div>
+    </div>
+  </div>
+  <div class="picture">
+    <img src="img/loseweight.jpg" alt="">
+  </div>
+</a>
+
+ */

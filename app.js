@@ -21,21 +21,30 @@ aystore.config(function($stateProvider, $urlRouterProvider) {
       templateUrl: 'tpl/mine.html',
       controller: 'MineController',
       controllerAs: 'mineCtrl'
+    })
+    .state('artdetail', {
+      url: '/artdetail',
+      templateUrl: 'tpl/artdetail.html',
+      controller: 'ArtdetailController',
+      controllerAs: 'artdetailCtrl'
     });
 });
 
+var goback = function () {
+  return window.history.back();
+};
 // 艾灸店列表控制
 aystore.controller('HomeController', function($rootScope, $scope, $http) {
-  $http.get('data/str-data.json', {
+  $http.get('data/strlist.json', {
       params: {
         "custId": "12323",
-        "data": "strData"
+        "data": "strList"
       },
       responseType: "json"
     })
-    .then(function(data) {
-      console.log(data.data.data);
-      $rootScope.strItems = data.data.data;
+    .then(function(res) {
+      console.log(res.data.data);
+      $rootScope.strItems = res.data.data;
     }, function() {
       alert('error');
     });
@@ -43,7 +52,7 @@ aystore.controller('HomeController', function($rootScope, $scope, $http) {
 
 // 文章页列表控制
 aystore.controller('AycultureController', function($rootScope, $scope, $http) {
-  $http.get('data/art-data.json', {
+  $http.get('data/artlist.json', {
       params: {
         "custId": "12323",
         "data": "artData"
@@ -54,11 +63,85 @@ aystore.controller('AycultureController', function($rootScope, $scope, $http) {
       // console.log(res);
       $rootScope.artItems = res.data.data;
       $scope.artItems = res.data.data;
-      $rootScope.type = res.data.data.artItems;
-      var type = $rootScope.artItems[0].type;
-      // console.log(type);
-      console.log($scope.artItems[0].thumbnail);
+      $scope.isType1 = function (type) {
+        return type==1? true : false;
+      };
+      $scope.isType2 = function (type) {
+        return type==2? true : false;
+      };
     }, function() {
       alert('error');
     });
+});
+// 文章详情页控制
+aystore.controller('ArtdetailController', function($rootScope, $scope, $http) {
+  $http.get('data/artdetail.json', {
+      params: {
+        "custId": "12323",
+        "data": "artdetail"
+      },
+      responseType: "json"
+    })
+    .then(function(res) {
+      // console.log(res);
+      $rootScope.art = res.data.data;
+      $scope.art = res.data.data;
+
+    }, function() {
+      alert('error');
+    });
+
+});
+
+// 底部菜单状态控制
+aystore.controller('BotmenuController', function($scope) {
+  // 点击第一个按钮时的动作
+  $scope.select1 = function () {
+    $scope.path1 = "img/home-selected.jpg";
+    $scope.path2 = "img/img/ay.jpg.jpg";
+    $scope.path3 = "img/mine.jpg.jpg";
+    $scope.txtClass1 = 1;
+    $scope.txtClass2 = 0;
+    $scope.txtClass3 = 0;
+  };
+  // 点击第二个按钮时的动作
+  $scope.select2 = function () {
+    $scope.path1 = "img/home.jpg";
+    $scope.path2 = "img/ay-selected.jpg";
+    $scope.path3 = "img/mine.jpg.jpg";
+    $scope.txtClass1 = 0;
+    $scope.txtClass2 = 1;
+    $scope.txtClass3 = 0;
+  };
+  // 点击第三个按钮时的动作
+  $scope.select3 = function () {
+    $scope.path1 = "img/home.jpg";
+    $scope.path2 = "img/ay.jpg";
+    $scope.path3 = "img/mine-selected.jpg";
+    $scope.txtClass1 = 0;
+    $scope.txtClass2 = 0;
+    $scope.txtClass3 = 1;
+  };
+});
+
+// 我的页控制器
+aystore.controller('MineController', function($rootScope, $scope, $http) {
+  $http.get('data/mine.json', {
+      params: {
+        "custId": "12323",
+        "data": "mine"
+      },
+      responseType: "json"
+    })
+    .then(function(res) {
+      $rootScope.mine = res.data.data;
+      $scope.mine = res.data.data;
+    }, function() {
+      alert('error');
+    });
+});
+
+// 消费记录
+aystore.controller('RecordController', function($rootScope, $scope, $http) {
+
 });

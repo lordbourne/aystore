@@ -1,0 +1,83 @@
+#artlist {
+  margin-top: 38px;
+  margin-bottom: 50px;
+  .art-item {
+    margin-left: 15px;
+    padding: 12px 0px;
+    padding-right: 15px;
+    border-top: 1px solid rgb(209, 209, 208);
+    .item-content {
+      display: block;
+      width: 100%;
+      .title {
+        font-size: 16px;
+        color: rgb(46, 46, 46);
+      }
+      .info {
+        margin-right: 130px;
+        >li {
+          font-size: 14px;
+          color: rgb(109, 109, 109);
+          display: inline-block;
+          width: 30%;
+        }
+      }
+    }
+    // Style1
+    .item-content1 {
+      .title {
+        margin-right: 130px;
+      }
+      .info {
+        margin-top: 10px;
+      }
+      .picture {
+        float: right;
+        height: 70px;
+        img {
+          height: 100%;
+        }
+      }
+    }
+    // Style2
+    .item-content2 {
+      .picture {
+        margin-top: 5px;
+        >li {
+          box-sizing: border-box;
+          display: inline-block;
+          max-width: 33%;
+          padding: 0 1px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 使用示例：
+<a class="article-style1 block" href="artdetail.html">
+  <div class="left">
+    <div class="title">
+      艾灸能减肥不？艾灸通过艾绒燃烧发热
+    </div>
+    <div class="info">
+      <div class="keyword">
+        艾绒哥
+      </div>
+      <div class="likes">
+        <span class="text-orange">80</span> 点赞
+      </div>
+      <div class="comments">
+        <span class="text-orange">30</span> 评论
+      </div>
+    </div>
+  </div>
+  <div class="picture">
+    <img src="img/loseweight.jpg" alt="">
+  </div>
+</a>
+
+ */

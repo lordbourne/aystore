@@ -1,0 +1,45 @@
+{
+  "data": {
+    "name": "李朝阳",
+    "avatar": "img/user1.png",
+    "careCnt": 10,
+    "collCnt": 20,
+    "credCnt": 10,
+    "ttlTimes": 20,
+    "ttlCost": 20000,
+    "ttlCredit": 20000,
+    "record": [
+      {
+        "date": "10-21",
+        "store": "井研养生保健店",
+        "cost": 500,
+        "number": 1,
+        "timeSpend": 65,
+        "credit": 500
+      },
+      {
+        "date": "10-22",
+        "store": "井研养生保健店",
+        "cost": 400,
+        "number": 1,
+        "timeSpend": 65,
+        "credGet": 400
+      },
+      {
+        "date": "10-23",
+        "store": "井研养生保健店",
+        "cost": 300,
+        "number": 1,
+        "timeSpend": 65,
+        "credGet": 300
+      }
+    ],
+    "collect": {
+      "store": [
+
+      ],
+      "article": [
+      ]
+    }
+  }
+}

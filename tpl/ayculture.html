@@ -1,29 +1,38 @@
 <div ng-include="'tpl/topbar-style1.html'"></div>
 
 <div ng-controller="AycultureController">
+
   <ul id="artlist">
-    <li ng-repeat="artItem in artItems">
-      <a ng-class="{1:'article-style1', 2:'article-style2'}[artItem.type]" ng-href="'artItem.link'">
-        <div class="left">
-          <div class="title" ng-bind="artItem.title"></div>
-          <div class="info">
-            <div class="author" ng-bind="artItem.author"></div>
-            <div class="likes">
-              <span class="txt-number" ng-bind="artItem.likes"></span> 点赞
-            </div>
-            <div class="comments">
-              <span class="txt-number" ng-bind="artItem.comments"></span> 评论
-            </div>
-          </div>
+    <li class="art-item" ng-repeat="artItem in artItems">
+      <!-- Style1: just one picture -->
+      <a class="item-content item-content1" ui-sref="artdetail" ng-show="isType1(artItem.type)">
+        <div class="picture">
+          <img src="{{artItem.thumbnail[0]}}">
         </div>
+        <div class="title" ng-bind="artItem.title"></div>
+        <ul class="info">
+          <li class="author" ng-bind="artItem.author"></li>
+          <li class="likes"><span class="txt-number">{{artItem.likes}}</span> 点赞</li>
+          <li class="comments"><span class="txt-number">{{artItem.comments}}</span> 评论</li>
+        </ul>
+      </a>
+      <!-- Style2: 3 pictures -->
+      <a class="item-content item-content2" ui-sref="artdetail" ng-show="isType2(artItem.type)">
+        <div class="title" ng-bind="artItem.title"></div>
+        <!-- <div class="picture">
+          <img src="{{pic}}" ng-repeat="pic in art-item">
+        </div> -->
         <ul class="picture">
-          <li ng-repeat="tbItem in artItem.thumbnail">
-            <!-- <img ng-src="tbItem"> -->
-            <img src="{{tbItem}}">
-          </li>
+          <li ng-repeat="pic in artItem.thumbnail"><img src="{{pic}}"></li>
+        </ul>
+        <ul class="info">
+          <li class="author">{{artItem.author}}</li>
+          <li class="likes"><span class="txt-number">{{artItem.likes}}</span> 点赞</li>
+          <li class="comments"><span class="txt-number">{{artItem.comments}}</span> 评论</li>
         </ul>
       </a>
     </li>
+
   </ul>
 </div>
 
