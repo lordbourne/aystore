@@ -27,6 +27,12 @@ aystore.config(function($stateProvider, $urlRouterProvider) {
       templateUrl: 'tpl/artdetail.html',
       controller: 'ArtdetailController',
       controllerAs: 'artdetailCtrl'
+    })
+    .state('record', {
+      url: '/record',
+      templateUrl: 'tpl/record.html',
+      controller: 'RecordController',
+      controllerAs: 'recordCtrl'
     });
 });
 
@@ -143,5 +149,5 @@ aystore.controller('MineController', function($rootScope, $scope, $http) {
 
 // 消费记录
 aystore.controller('RecordController', function($rootScope, $scope, $http) {
-
+  $scope.mine = $rootScope.mine;
 });

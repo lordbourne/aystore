@@ -1,0 +1,32 @@
+<div id="topbar">
+  <a class="left-icon-back" onclick="goback()">
+    <img src="img/back.png" alt="back.png">
+  </a>
+  消费记录
+</div>
+
+<div ng-controller="RecordController">
+  <div id="record">
+    <div class="info">
+      共消费 <span class="total-times">{{mine.ttlTimes}}</span> 次 <span class="txt-number">￥<span class="total-price">{{mine.ttlCost}}</span></span>&nbsp;&nbsp;&nbsp;&nbsp;积分 <span>{{mine.ttlCredit}}</span> 分
+    </div>
+    <!-- 记录流水线部分 -->
+    <ul class="record">
+      <li class="record-item" ng-repeat="record in mine.record">
+        <span class="item-date">{{record.date}}</span>
+        <div class="item-info clearfloat">
+          <p class="p1 clearfloat">
+            <span class="store">{{record.store}}</span>
+            <span class="price txt-number">￥ {{record.cost}}</span>
+          </p>
+          <p class="p2 clearfloat">
+            <span class="service">
+								艾灸店保健 {{record.number}} 人次，时间 {{record.timeSpend}} 分钟
+						</span>
+            <span class="score">获得 {{record.credit}} 积分</span>
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
