@@ -8,28 +8,37 @@
   <title>首页</title>
   <link rel="stylesheet" href="css/reset.css">
 
-  <link rel="stylesheet" href="css/topbar-style1.css">
+  <link rel="stylesheet" href="css/topbar-search.css">
   <link rel="stylesheet" href="css/strlist.css">
   <link rel="stylesheet" href="css/botmenu.css">
 
   <link rel="stylesheet" href="css/artlist.css">
 
-
-  <link rel="stylesheet" href="css/topbar-style2.css">
+  <link rel="stylesheet" href="css/topbar-title.css">
   <link rel="stylesheet" href="css/artdetail.css">
   <link rel="stylesheet" href="css/mine.css">
   <link rel="stylesheet" href="css/record.css">
+  <link rel="stylesheet" href="css/setting.css">
+  <link rel="stylesheet" href="css/strdetail.css">
+
+  <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
 
 </head>
 
 <body ng-app="aystore">
-  <div ui-view=""></div>
-  <!-- <div ui-view="ayculture"></div> -->
-  <!-- <div ui-view="mine"></div> -->
 
+  <div ui-view=""></div>
+
+  <script src="js/swiper-3.4.2.min.js"></script>
+  <script src="js/jedate.js"></script>
   <script src="node_modules/angular/angular.js"></script>
   <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
   <script src="app.js"></script>
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      autoplay: 1000,
+    });
+  </script>
   <!-- <script src="js/jquery.js"></script> -->
   <!-- <script src="js/index.js"></script> -->
 </body>

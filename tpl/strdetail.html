@@ -1,0 +1,76 @@
+<div ng-controller="StrdetailController">
+  <div id="topbar-title">
+    <a class="left-icon-back goback" onclick="goback()">
+      <img src="img/back.png" alt="back.jpg">
+    </a>
+    <span class="name">{{pageTitle}}</span>
+  </div>
+
+  <div id="strdetail">
+    <!-- banner 部分：店的大图 -->
+    <section class="sec-banner">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" ng-repeat="pic in strdetail.strPicture">
+            <img ng-src="{{pic}}" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- intro 部分：店的简介部分 -->
+    <section class="sec-intro store-info">
+      <img class="icon" src="img/location-yellow.png" alt="">
+      <p class="intro servie">{{strdetail.srvIntro}}</p>
+      <p class="address">{{strdetail.strCity + strdetail.strDistrict + strdetail.strAddress}}</p>
+    </section>
+    <!-- 服务价格与选择 -->
+    <section class="sec-order order-info">
+      <!-- 满员图标，根据返回的字段 full 设置其隐藏与否, 而求如果满的话，后面表单都无效，设为禁用状态 -->
+      <div class="icon-full icon-man"></div>
+      <!-- 日期时间选择 -->
+      <section class="sec-date timepart clearfloat">
+        <div class="title">预定时间：</div>
+        <p class="datep time">
+          <input class="datainp" id="dateinput" type="text" placeholder="" readonly ng-model="curDate">{{curDate}}
+        </p>
+        <!-- <img class="icon" src="img/calendar.png" alt=""> -->
+        <div class="icon">
+          <img class="" src="img/calendar.png" alt="" ng-click="setDate()">
+        </div>
+      </section>
+
+      <!-- 主服务 -->
+      <section class="sec-aySrvPrice ayservicepart">
+        <div class="title">
+          艾灸服务费
+        </div>
+        <ul class="">
+        </ul>
+        <div class="icon checkbox1"></div>
+        <!-- <input id="myothercheckbox" type="checkbox" class="icon checkbix" data-text="Checkbix. Large, checked" data-size="large"> -->
+      </section>
+
+      <!-- 其他服务 -->
+      <setion class="sec-otherSrvPrice otherservicepart">
+        <div class="title">
+          其他保健服务费
+        </div>
+        <ul>
+        </ul>
+      </setion>
+    </section>
+
+    <div id="botbar">
+      <a class="full" href="pay.html" data-full>预定</a>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+

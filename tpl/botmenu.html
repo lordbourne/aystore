@@ -1,14 +1,17 @@
 <div class="botmenu" id="botmenu" ng-controller="BotmenuController">
-  <a ui-sref="home" class="left" ng-click="select1()">
-    <img src="img/home.jpg" alt="" ng-src="{{paht1}}">
-    <div class="text text-selected" ng-class="{1:'text-selected'}[txtClass1]">首页</div>
+  <a class="left" ng-click="select1()">
+    <img alt="" ng-src="{{path1}}">
+    <div class="text" ng-class="{1:'text-selected',0:''}[txtClass1]">首页</div>
   </a>
-  <a ui-sref="ayculture" class="center" ng-click="select2()">
-    <img src="img/ay.jpg" alt="" ng-src="{{paht2}}">
-    <div class="text" ng-class="{1:'text-selected'}[txtClass2]">艾灸文化</div>
+  <a class="center" ng-click="select2()">
+    <img alt="" ng-src="{{path2}}">
+    <div class="text" ng-class="{1:'text-selected',0:''}[txtClass2]">艾灸文化</div>
   </a>
-  <a ui-sref="mine" class="right" ng-click="select3()">
-    <img src="img/mine.jpg" alt="" ng-src="{{paht3}}">
-    <div class="text" ng-class="{1:'text-selected'}[txtClass3]">我的</div>
+  <a class="right" ng-click="select3()">
+    <img alt="" ng-src="{{path3}}">
+    <div class="text" ng-class="{1:'text-selected',0:''}[txtClass3]">我的</div>
   </a>
 </div>
+<!-- ui-sref="home"
+ui-sref="ayculture"
+ui-sref="mine"  -->

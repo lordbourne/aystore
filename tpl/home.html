@@ -1,4 +1,4 @@
-<div ng-include="'tpl/topbar-style1.html'"></div>
+<div ng-include="'tpl/topbar-search.html'"></div>
 
 <div ng-controller="HomeController">
   <ul class="strlist" id="strlist">
@@ -11,7 +11,7 @@
           <img class="picture" ng-src="{{strItem.strThumbnail}}" alt="store picture">
           <div class="name" ng-bind="strItem.strName"></div>
           <div class="order clearfloat">
-            <a class="btn btn-small" href="store-info.html" ng-class="{0:'btn-blue', 1:'ordered'}[strItem.ordStatus]" ng-bind="{0:'预定', 1:'已预订'}[strItem.ordStatus]">
+            <a class="btn btn-small" ui-sref="strdetail" ng-class="{0:'btn-blue', 1:'ordered'}[strItem.ordStatus]" ng-bind="{0:'预定', 1:'已预订'}[strItem.ordStatus]">
             </a>
             <span class="avg-price">
               <span class="txt-number" ng-bind="strItem.avgPrice"></span> 人/次

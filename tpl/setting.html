@@ -1,0 +1,62 @@
+<div ng-controller="SettingController">
+  <div ng-include="'tpl/topbar-title.html'"></div>
+  <div id="container" class="bg-gray">
+    <a class="part1" href="#">
+      <div class="user-picture">
+        <img ng-src="{{mine.avatar}}" alt="">
+      </div>
+      <ul>
+        <li class="user-name">{{mine.name}}</li>
+        <li class="user-no">No.<span>{{mine.id}}</span></li>
+      </ul>
+    </a>
+    <div class="part2">
+      <ul>
+        <li class="item1">
+          <div class="icon">
+            <img src="img/nickname.png" alt="">
+          </div>
+          <div class="info">
+            <div class="key">昵称</div>
+            <div class="value">{{mine.nickname}}</div>
+          </div>
+        </li>
+        <li class="item2">
+          <div class="icon">
+            <img src="img/phone.png" alt="">
+          </div>
+          <div class="info">
+            <div class="key">手机号</div>
+            <div class="value">{{mine.phone}}</div>
+          </div>
+        </li>
+        <li class="item3">
+          <div class="icon">
+            <img src="img/message.png" alt="">
+          </div>
+          <div class="info">
+            <div class="key">短信验证</div>
+            <div class="value">
+              <a class="btn-send" href="" onclick="sendmsg()">
+                <button>发送</button>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="item4">
+          <div class="icon">
+            <img src="img/password.png" alt="">
+          </div>
+          <div class="info">
+            <div class="key">登录密码</div>
+            <div class="value">******</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <a class="btn btn-long btn-blue">设置登录密码</a>
+  </div>
+
+</div>
+
+<div ng-include="'tpl/botmenu.html'"></div>

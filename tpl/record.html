@@ -1,11 +1,7 @@
-<div id="topbar">
-  <a class="left-icon-back" onclick="goback()">
-    <img src="img/back.png" alt="back.png">
-  </a>
-  消费记录
-</div>
-
 <div ng-controller="RecordController">
+
+  <div ng-include="'tpl/topbar-title.html'"></div>
+
   <div id="record">
     <div class="info">
       共消费 <span class="total-times">{{mine.ttlTimes}}</span> 次 <span class="txt-number">￥<span class="total-price">{{mine.ttlCost}}</span></span>&nbsp;&nbsp;&nbsp;&nbsp;积分 <span>{{mine.ttlCredit}}</span> 分
