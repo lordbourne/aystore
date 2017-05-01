@@ -1,0 +1,113 @@
+<div ng-controller="PayController">
+  <div id="topbar-title">
+    <a class="left-icon-back" onclick="goback()">
+      <img src="img/back.png" alt="back.png">
+    </a>
+    成都艾瑞建设路保健养生店
+  </div>
+</div>
+<div id="pay">
+  <header class="header">
+    <div class="p1">
+      ￥<span class="">300.00</span>
+    </div>
+    <div class="p2">
+      预定时间：<span>2016-01-22 10: 30</span>
+    </div>
+  </header>
+  <ul class="part1">
+    <li class="part1-item">
+      <ul>
+        <li class="service">艾灸床保健:</li>
+        <li class="price"><span class="txt-number" data-price="price">100</span> 元/小时</li>
+        <li class="num">
+          <select name="" id="">
+            <option value="">1人</option>
+            <option value="">2人</option>
+            <option value="">3人</option>
+            <option value="">4人</option>
+            <option value="">5人</option>
+            <option value="">6人</option>
+          </select>
+        </li>
+      </ul>
+    </li>
+    <li class="part1-item">
+      <ul>
+        <li class="service">按摩:</li>
+        <li class="price"><span class="data-price txt-number">100</span> 元/小时</li>
+        <li class="num">
+          <select name="" id="">
+            <option value="">1人</option>
+            <option value="">2人</option>
+            <option value="">3人</option>
+            <option value="">4人</option>
+            <option value="">5人</option>
+            <option value="">6人</option>
+          </select>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <ul class="part2">
+    <li class="clearfloat">
+      <div class="item clearfloat">
+        <div class="icon">
+          <img src="img/name.png" alt="">
+        </div>
+        <div class="info">
+          <span class="key">姓名</span>
+          <span class="value">赵旭日</span>
+        </div>
+      </div>
+      <div class="other-info">
+      </div>
+    </li>
+    <li class="clearfloat">
+      <div class="item clearfloat">
+        <div class="icon">
+          <img src="img/phone.png" alt="">
+        </div>
+        <div class="info">
+          <span class="key">电话</span>
+          <span class="value">13855844754</span>
+        </div>
+      </div>
+      <div class="other-info">
+        （手机号为账号查保健记录）
+      </div>
+    </li>
+    <li class="clearfloat">
+      <div class="item clearfloat">
+        <div class="icon">
+          <img src="img/pay.png" alt="">
+        </div>
+        <div class="info">
+          <span class="key">余额支付</span>
+          <span class="value"><span class="txt-number">￥<span data-price="price">270</span></span> 元</span>
+        </div>
+      </div>
+      <div class="other-info">
+        <span class="info-left">线上支付享受 <span class="txt-number" data-price="price">9</span> 折优惠</span>
+        <span class="info-right">余额：<span class="txt-number" data-price="price">455</span> 元</span>
+      </div>
+    </li>
+  </ul>
+  <div class="part3">
+    <form class="clearfloat">
+      <label class="wx" for="wx">
+        <div class="radio-wrapper">
+          <input type="radio" id="wx" name="pay">
+        </div>
+        <img src="img/wxpay.jpg" alt="">
+      </label>
+      <label class="ali" for="ali">
+        <div class="radio-wrapper">
+          <input type="radio" id="ali" name="pay">
+        </div>
+        <img src="img/alipay.png" alt="">
+      </label>
+    </form>
+  </div>
+</div>
+<a href="pay-successful.html" class="btn btn-long btn-blue">支付</a>

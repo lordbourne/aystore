@@ -1,5 +1,6 @@
 #strdetail {
   margin-top: 40px;
+  margin-bottom: 40px;
   width: 100%;
   font-family: "Microsoft YaHei";
   .sec-banner {
@@ -10,7 +11,7 @@
     // background: url(../img/shop1.jpg) no-repeat 0px 0px;
     // background-size: 100% 100%;
   }
-  .store-info {
+  .sec-intro {
     position: relative;
     padding-left: 10px;
     padding-right: 28px;
@@ -33,7 +34,7 @@
       margin-top: 10px;
     }
   }
-  .order-info {
+  .sec-order {
     position: relative;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -42,7 +43,7 @@
     background: #dde6e7;
     font-size: 14px;
     color: #697273;
-    .icon-man {
+    .icon-full {
       position: absolute;
       top: -18px;
       right: 26px;
@@ -54,19 +55,7 @@
       -webkit-background-size: 100% 100%;
       background-size: 100% 100%;
     }
-    .icon {
-      position: absolute;
-      right: -30px;
-      width: 20px;
-      img {
-        width: 100%;
-      }
-    }
-    .title {
-      font-size: 16px;
-      color: #2b3435;
-    }
-    .timepart {
+    .sec-date {
       position: relative;
       /* 清除浮动 */
       .icon,
@@ -79,8 +68,24 @@
         margin-top: 4px;
         margin-left: 20px;
       }
+      input {
+        border: none;
+        background-color: #DDE6E7;
+      }
+      .icon {
+        position: absolute;
+        right: -30px;
+        width: 20px;
+        img {
+          width: 100%;
+        }
+      }
+      .title {
+        font-size: 16px;
+        color: #2b3435;
+      }
     }
-    .ayservicepart {
+    .sec-aySrvPrice {
       position: relative;
       margin-top: 10px;
       .title {
@@ -88,6 +93,7 @@
       }
       ul {
         margin-top: 10px;
+        margin-bottom: 10px;
         li {
           margin-top: 10px;
           .time {
@@ -99,7 +105,7 @@
         }
       }
     }
-    .otherservicepart {
+    .sec-othSrvPrice {
       margin-top: 10px;
       .title {
         font-size: 16px;
@@ -119,5 +125,27 @@
       }
     }
   }
-}
+  .btn {
+    position: fixed;
+    bottom: 0px;
+    z-index: 1;
+    width: 100%;
+  }
+  input {
+    display: none;
+  }
+  .checkbox,
+  .icheckbox_polaris {
+    position: absolute!important;
+    right: -34px;
+    top: -5px;
+  }
+  .icheckbox_my1,
+  .icheckbox_my2 {
+    position: absolute!important;
+    right: -34px;
+    top: -1px;
+  }
 
+
+}

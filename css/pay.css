@@ -1,0 +1,34 @@
+#pay {
+  margin-top: 40px;
+  background: #f1f0ec;
+}
+#pay .part1 {
+  width: 100%;
+  border-top: 1px solid #dbdde0;
+  border-bottom: 1px solid #dbdde0;
+  padding-left: 20px;
+  background: #fff;
+}
+#pay .part1 .part1-item {
+  width: 100%;
+  padding: 16px 0px;
+  font-size: 15px;
+  border-top: 1px solid #d1d1d0;
+  overflow: hidden;
+  border: 1px solid red;
+}
+#pay .part1 .part1-item ul {
+  width: 90.38%;
+  margin-left: 4px;
+  overflow: hidden;
+}
+#pay .part1 .part1-item ul li {
+  float: left;
+  width: 33%;
+}
+#pay .part1 .part1-item:first-child {
+  border-top: none;
+}
+#pay .part1 .part1-item select {
+  width: 85px;
+}

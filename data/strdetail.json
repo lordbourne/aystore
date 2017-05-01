@@ -15,27 +15,27 @@
     "aySrvPrice": [
       {
         "id": 1,
-        "weekday": [1,5],
+        "weekday": "周一到周五",
         "srvTime": "08:00-12:00",
         "price": 80,
         "unit": "元/小时"
       },
       {
         "id": 2,
-        "weekday": [1,5],
+        "weekday": "周一到周五",
         "srvTime": "12:00-22:00",
         "price": 100,
         "unit": "元/小时"
       },
       {
         "id": 3,
-        "weekday": [6,7],
+        "weekday": "节假日全天",
         "srvTime": "",
         "price": 120,
         "unit": "元/小时"
       }
     ],
-    "otherSrvPrice": [
+    "othSrvPrice": [
       {
         "id": 1,
         "srvName": "按摩",

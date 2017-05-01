@@ -1,5 +1,6 @@
 #strdetail {
   margin-top: 40px;
+  margin-bottom: 40px;
   width: 100%;
   font-family: "Microsoft YaHei";
 }
@@ -9,7 +10,7 @@
 #strdetail .sec-banner img {
   width: 100%;
 }
-#strdetail .store-info {
+#strdetail .sec-intro {
   position: relative;
   padding-left: 10px;
   padding-right: 28px;
@@ -20,19 +21,19 @@
   font-size: 14px;
   color: #2e2e2e;
 }
-#strdetail .store-info .icon {
+#strdetail .sec-intro .icon {
   position: absolute;
   top: 4px;
   right: 12px;
   width: 18px;
 }
-#strdetail .store-info .icon img {
+#strdetail .sec-intro .icon img {
   width: 100%;
 }
-#strdetail .store-info .address {
+#strdetail .sec-intro .address {
   margin-top: 10px;
 }
-#strdetail .order-info {
+#strdetail .sec-order {
   position: relative;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -42,7 +43,7 @@
   font-size: 14px;
   color: #697273;
 }
-#strdetail .order-info .icon-man {
+#strdetail .sec-order .icon-full {
   position: absolute;
   top: -18px;
   right: 26px;
@@ -54,67 +55,93 @@
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
-#strdetail .order-info .icon {
-  position: absolute;
-  right: -30px;
-  width: 20px;
-}
-#strdetail .order-info .icon img {
-  width: 100%;
-}
-#strdetail .order-info .title {
-  font-size: 16px;
-  color: #2b3435;
-}
-#strdetail .order-info .timepart {
+#strdetail .sec-order .sec-date {
   position: relative;
   /* 清除浮动 */
 }
-#strdetail .order-info .timepart .icon,
-#strdetail .order-info .timepart .title {
+#strdetail .sec-order .sec-date .icon,
+#strdetail .sec-order .sec-date .title {
   float: left;
   font-size: 16px;
 }
-#strdetail .order-info .timepart .time {
+#strdetail .sec-order .sec-date .time {
   float: left;
   margin-top: 4px;
   margin-left: 20px;
 }
-#strdetail .order-info .ayservicepart {
+#strdetail .sec-order .sec-date input {
+  border: none;
+  background-color: #DDE6E7;
+}
+#strdetail .sec-order .sec-date .icon {
+  position: absolute;
+  right: -30px;
+  width: 20px;
+}
+#strdetail .sec-order .sec-date .icon img {
+  width: 100%;
+}
+#strdetail .sec-order .sec-date .title {
+  font-size: 16px;
+  color: #2b3435;
+}
+#strdetail .sec-order .sec-aySrvPrice {
   position: relative;
   margin-top: 10px;
 }
-#strdetail .order-info .ayservicepart .title {
+#strdetail .sec-order .sec-aySrvPrice .title {
   font-size: 16px;
 }
-#strdetail .order-info .ayservicepart ul {
+#strdetail .sec-order .sec-aySrvPrice ul {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#strdetail .sec-order .sec-aySrvPrice ul li {
   margin-top: 10px;
 }
-#strdetail .order-info .ayservicepart ul li {
-  margin-top: 10px;
-}
-#strdetail .order-info .ayservicepart ul li .time {
+#strdetail .sec-order .sec-aySrvPrice ul li .time {
   float: left;
 }
-#strdetail .order-info .ayservicepart ul li .price {
+#strdetail .sec-order .sec-aySrvPrice ul li .price {
   float: right;
 }
-#strdetail .order-info .otherservicepart {
+#strdetail .sec-order .sec-othSrvPrice {
   margin-top: 10px;
 }
-#strdetail .order-info .otherservicepart .title {
+#strdetail .sec-order .sec-othSrvPrice .title {
   font-size: 16px;
 }
-#strdetail .order-info .otherservicepart ul {
+#strdetail .sec-order .sec-othSrvPrice ul {
   margin-top: 10px;
 }
-#strdetail .order-info .otherservicepart ul li {
+#strdetail .sec-order .sec-othSrvPrice ul li {
   position: relative;
   margin-top: 10px;
 }
-#strdetail .order-info .otherservicepart ul li .service {
+#strdetail .sec-order .sec-othSrvPrice ul li .service {
   float: left;
 }
-#strdetail .order-info .otherservicepart ul li .price {
+#strdetail .sec-order .sec-othSrvPrice ul li .price {
   float: right;
+}
+#strdetail .btn {
+  position: fixed;
+  bottom: 0px;
+  z-index: 1;
+  width: 100%;
+}
+#strdetail input {
+  display: none;
+}
+#strdetail .checkbox,
+#strdetail .icheckbox_polaris {
+  position: absolute!important;
+  right: -34px;
+  top: -5px;
+}
+#strdetail .icheckbox_my1,
+#strdetail .icheckbox_my2 {
+  position: absolute!important;
+  right: -34px;
+  top: -1px;
 }

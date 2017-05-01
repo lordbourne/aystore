@@ -5,7 +5,7 @@
   <ul id="artlist">
     <li class="art-item" ng-repeat="artItem in artItems">
       <!-- Style1: just one picture -->
-      <a class="item-content item-content1" ui-sref="artdetail" ng-show="isType1(artItem.type)">
+      <a class="item-content item-content1" ui-sref="main.artdetail" ng-show="isType1(artItem.type)">
         <div class="picture">
           <img src="{{artItem.thumbnail[0]}}">
         </div>
@@ -32,8 +32,5 @@
         </ul>
       </a>
     </li>
-
   </ul>
 </div>
-
-<div ng-include="'tpl/botmenu.html'"></div>
