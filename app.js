@@ -89,6 +89,53 @@ aystore.config(function($stateProvider, $urlRouterProvider) {
     });
 });
 
+aystore.factory('DayAndTimeTest', ['', function(){
+  var service = {};
+  Array.prototype.contains = function(obj) {
+    var i = this.length;
+    while (i--) {
+      if (this[i] === obj) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  service.isDayInRange = function (date, ruleRaw) {
+      var day = new Date(date).getDay();
+      day = (day === 0) ? 7 : day;
+      var rule = ruleRaw.replace(/ /gi, ""); // 去空格，如："ff,  f, d ,f " -> "ff,f,d,f"
+      var arr = [];
+      var arr1 = rule.split(",");
+      var beg = 0;
+      var end = 0;
+      var item = "";
+      for (let i=0; i<arr1.length; i++) {
+        item = arr1[i];
+        if (/-/.test(item)) {
+          beg = parseInt(item.split("-")[0]);
+          end = parseInt(item.split("-")[1]);
+          while (beg <= end) {
+            arr.push(beg);
+            beg++;
+          }
+        } else {
+          arr.push(parseInt(item));
+        }
+      }
+      console.log(day);
+      console.log(arr);
+      console.log(arr.contains(day));
+      if (arr.contains(day)) {
+        return true;
+      } else {
+        return false;
+      }
+  };
+
+   return service;
+}])
+
 var goback = function() {
   return window.history.back();
 };
@@ -235,8 +282,9 @@ aystore.controller('SettingController', function($rootScope, $scope) {
 });
 
 // 店铺详情
-aystore.controller('StrdetailController', function($rootScope, $scope, $http, $timeout) {
-  $http.get('data/strdetail.json', {
+aystore.controller('StrdetailController', function($rootScope, $scope, $http, $timeout, $state, DayAndTimeTest) {
+  $http
+    .get('data/strdetail.json', {
       params: {
         "custId": "12323",
         "data": "strdetail"
@@ -251,60 +299,80 @@ aystore.controller('StrdetailController', function($rootScope, $scope, $http, $t
     }, function() {
       alert('error');
     });
-    $scope.setDate = function () {
-      jeDate({
-        dateCell: "#dateinput",
-        format: "YYYY-MM-DD hh:mm:ss",
-        isinitVal: true,
-        isTime: true
-      });
-    };
-    // $('.sec-aySrvPrice input.chk-aysrv').iCheck({
-    //    checkboxClass: 'icheckbox_polaris'
-    //    // radioClass: 'iradio_polaris',
-    //    // increaseArea: '-10' // optional
-    // });
-    $timeout(function () {
-      $('input').iCheck({
-         checkboxClass: 'icheckbox_polaris'
-         // radioClass: 'iradio_polaris',
-         // increaseArea: '-10' // optional
-      });
-    });
-    // 服务类型的选择
-    // --主服务的时间段
-    $('.sec-aySrvPrice input').
-    // --其他服务的类型
 
+  $scope.setDate = function () {
+    jeDate({
+      dateCell: "#dateinput",
+      format: "YYYY-MM-DD hh:mm:ss",
+      isinitVal: true,
+      isTime: true
+    });
+  };
+
+  $timeout(function () {
+    $('input').iCheck({
+       checkboxClass: 'icheckbox_polaris'
+       // radioClass: 'iradio_polaris',
+       // increaseArea: '-10' // optional
+    });
+  });
+
+  // 订单管理
+  var order = {
+    'ordId': 'adafdfefdvefsdvsd1213',
+    'creTime': new Date().getTime(),
+    'custId': 'sjdkfjsdfweioje12',
+    'phone': 1234567,
+    'srvTime': '',
+    'aySrv': 0,
+    'othSrv': []
+  };
+
+  function chooseService () {
+    // 预定的保健时间
+    order.srvTime = $('.sec-date input').val();
+    // 判断选定的时间位于哪个时间段
+    var date = order.srvTime.split(" ")[0];
+    var day = new Date(date).getDay();// 星期几
+    var time = order.srvTime.split(" ")[1];
+    console.log(time);
+    var aySrvPrice = $rootScope.aySrvPrice;
+    var item = null;
+    var price =
+    // function getAySrvPrice (argument) {
+    //   // body...
+    // }
+    // for (let key in aySrvPrice) {
+    //   item = aySrvPrice[key];
+    //   if (DayAndTimeTest.isDayInRange(day, item.weekday)) {
+    //       return
+    //   }
+    // }
+
+
+    // 主服务
+    order.aySrv = $('.sec-aySrvPrice input').is(':checked') ? 1 : 0;
+    // 其他服务
+    $('.sec-othSrvPrice input').each(function(index, el) {
+      var name = $(this).attr('name');
+      var value = $(this).is(':checked') ? 1 : 0;
+      order.othSrv[name] = value;
+    });
     // 人数的选择
 
+    console.log(order);
+    $rootScope.order = order;
+    $state.go('detail.pay');
+  }
+
+  $scope.chooseService = chooseService;
+
+
 });
+
 // 支付
 aystore.controller('PayController', function($rootScope, $scope, $http) {
-  // $http.get('data/strdetail.json', {
-  //   params: {
-  //     "custId": "12323",
-  //     "data": "strdetail"
-  //   },
-  //   responseType: "json"
-  // })
-  // .then(function(res) {
-  //   $rootScope.strdetail = res.data.data;
-  //   $scope.strdetail = res.data.data;
-  //   console.log($rootScope.strdetail);
-  //   $rootScope.pageTitle = $rootScope.strdetail.strName;
-  // }, function() {
-  //   alert('error');
-  // });
 
-  // $scope.setDate = function() {
-  //   jeDate({
-  //     dateCell: "#dateinput",
-  //     format: "YYYY-MM-DD hh:mm:ss",
-  //     isinitVal: true,
-  //     isTime: true
-  //   });
-  // };
 });
 
 // 支付成功

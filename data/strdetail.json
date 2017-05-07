@@ -15,22 +15,28 @@
     "aySrvPrice": [
       {
         "id": 1,
-        "weekday": "周一到周五",
+        "weekday": "1-5",
         "srvTime": "08:00-12:00",
+        "weekdayDesc": "周一到周五",
+        "srvTimeDesc": "8:00 - 12:00",
         "price": 80,
         "unit": "元/小时"
       },
       {
         "id": 2,
-        "weekday": "周一到周五",
+        "weekday": "1-5",
         "srvTime": "12:00-22:00",
+        "weekdayDesc": "周一到周五",
+        "srvTimeDesc": "12:00 - 22:00",
         "price": 100,
         "unit": "元/小时"
       },
       {
         "id": 3,
-        "weekday": "节假日全天",
-        "srvTime": "",
+        "weekday": "6, 7",
+        "srvTime": "12:00-22:00",
+        "weekdayDesc": "节假日全天",
+        "srvTimeDesc": "12:00 - 22:00",
         "price": 120,
         "unit": "元/小时"
       }
@@ -39,12 +45,14 @@
       {
         "id": 1,
         "srvName": "按摩",
+        "inputName": "massage",
         "price": 80,
         "unit": "元/小时"
       },
       {
         "id": 2,
         "srvName": "艾灸洗脚",
+        "inputName": "feet",
         "price": 50,
         "unit": "元/小时"
       }

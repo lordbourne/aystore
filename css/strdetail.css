@@ -43,6 +43,9 @@
   font-size: 14px;
   color: #697273;
 }
+#strdetail .sec-order input {
+  display: none;
+}
 #strdetail .sec-order .icon-full {
   position: absolute;
   top: -18px;
@@ -70,6 +73,7 @@
   margin-left: 20px;
 }
 #strdetail .sec-order .sec-date input {
+  display: inline-block;
   border: none;
   background-color: #DDE6E7;
 }
@@ -129,9 +133,6 @@
   bottom: 0px;
   z-index: 1;
   width: 100%;
-}
-#strdetail input {
-  display: none;
 }
 #strdetail .checkbox,
 #strdetail .icheckbox_polaris {

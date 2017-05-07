@@ -1,8 +1,25 @@
 #pay {
+  box-sizing: border-box;
   margin-top: 40px;
   background: #f1f0ec;
 }
+#pay .header {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #f1f0ec;
+}
+#pay .header .p1 {
+  font-size: 25px;
+  color: #000;
+}
+#pay .header .p2 {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #727272;
+}
 #pay .part1 {
+  box-sizing: border-box;
   width: 100%;
   border-top: 1px solid #dbdde0;
   border-bottom: 1px solid #dbdde0;
@@ -15,20 +32,17 @@
   font-size: 15px;
   border-top: 1px solid #d1d1d0;
   overflow: hidden;
-  border: 1px solid red;
+  text-align: center;
 }
-#pay .part1 .part1-item ul {
-  width: 90.38%;
-  margin-left: 4px;
-  overflow: hidden;
+#pay .part1 .part1-item li {
+  display: inline-block;
 }
-#pay .part1 .part1-item ul li {
-  float: left;
-  width: 33%;
+#pay .part1 .part1-item li + li {
+  margin-left: 30px;
 }
 #pay .part1 .part1-item:first-child {
   border-top: none;
 }
 #pay .part1 .part1-item select {
-  width: 85px;
+  width: 70px;
 }

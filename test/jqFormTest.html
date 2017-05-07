@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <title>Document</title>
+</head>
+<body>
+  <input id="checkbox" name="checkbox" type="checkbox">
+  <input id="radio" name="radio" type="radio">
+  <input id="text" name="text" type="text">
+  <select name="select" id="select">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+  </select>
+  <button id="btn">打印值</button>
+
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+  <script>
+    'use strict';
+
+    $('#btn').click(function () {
+      console.log('checkbox: ' + $('#checkbox').is(':checked'));
+      console.log('radio: ' + $('#radio').is(':checked'));
+      console.log('text: ' + $('#text').val());
+      // console.log('select: ' + $('#select').val());
+      console.log('select: ' + $('#select').val());
+
+      console.log('checkbox: ' + $('#checkbox').attr('name'));
+      console.log('radio: ' + $('#radio').attr('name'));
+      console.log('text: ' + $('#text').attr('name'));
+      console.log('select: ' + $('#select').attr('name'));
+    });
+  </script>
+</body>
+</html>

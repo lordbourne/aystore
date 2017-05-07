@@ -9,14 +9,14 @@
 <div id="pay">
   <header class="header">
     <div class="p1">
-      ￥<span class="">300.00</span>
+      ￥<span class="">待计算</span>
     </div>
     <div class="p2">
-      预定时间：<span>2016-01-22 10: 30</span>
+      预定时间：<span>{{order.srvTime}}</span>
     </div>
   </header>
   <ul class="part1">
-    <li class="part1-item">
+    <li class="part1-item" ng-show="order.aySrv">
       <ul>
         <li class="service">艾灸床保健:</li>
         <li class="price"><span class="txt-number" data-price="price">100</span> 元/小时</li>
@@ -32,23 +32,24 @@
         </li>
       </ul>
     </li>
-    <li class="part1-item">
+    <li class="part1-item"  ng-repeat="(key,value) in order.othSrv">
       <ul>
-        <li class="service">按摩:</li>
-        <li class="price"><span class="data-price txt-number">100</span> 元/小时</li>
+        <li class="service">{{key}}}</li>
+        <li class="price"><span class="data-price txt-number">{{strdetail.aySrvPrice[]}}</span> 元/小时</li>
         <li class="num">
           <select name="" id="">
-            <option value="">1人</option>
-            <option value="">2人</option>
-            <option value="">3人</option>
-            <option value="">4人</option>
-            <option value="">5人</option>
-            <option value="">6人</option>
+            <option value="1">1人</option>
+            <option value="2">2人</option>
+            <option value="3">3人</option>
+            <option value="4">4人</option>
+            <option value="5">5人</option>
+            <option value="6">6人</option>
           </select>
         </li>
       </ul>
     </li>
   </ul>
+
   <ul class="part2">
     <li class="clearfloat">
       <div class="item clearfloat">
