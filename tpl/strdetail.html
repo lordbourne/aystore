@@ -48,7 +48,7 @@
         </div>
         <ul class="">
           <li class="clearfix" ng-repeat="aySrvItem in strdetail.aySrvPrice">
-            <div class="time">{{aySrvItem.weekday + "  " + aySrvItem.srvTime}}</div>
+            <div class="time">{{aySrvItem.weekdayDesc + "  " + aySrvItem.srvTime}}</div>
             <div class="price">{{aySrvItem.price + "  " + aySrvItem.unit}}</div>
           </li>
         </ul>
@@ -72,10 +72,10 @@
         </ul>
       </setion>
     </section>
-
     <a class="full btn btn-long btn-blue" data-full ng-click="chooseService()">
       预定
     </a>
+
 
   </div>
 

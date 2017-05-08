@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    function isTimeInRange(time, range) {
+      var range = ruleRaw.replace(/ /gi, "");
+      var arr = range.split("-");
+      var beg = nthMinute(arr[0]);
+      var end = nthMinute(arr[1]);
+      var time = nthMinute(time);
+      return time >= beg && time <= end;
+    }
+    // 输入时间字符串，获得该时刻是一天的第几分钟
+    function nthMinute(time) {
+      var time = time.replace(/ /gi, "");// 去空格
+      var arr = time.split(":");
+      var h = parseInt(arr[0]);
+      var m = parseInt(arr[1]);
+      return 60*h + m;
+    }
+  </script>
+</body>
+</html>

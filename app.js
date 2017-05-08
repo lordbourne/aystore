@@ -89,7 +89,7 @@ aystore.config(function($stateProvider, $urlRouterProvider) {
     });
 });
 
-aystore.factory('DayAndTimeTest', ['', function(){
+aystore.factory('DayAndTimeTest', function(){
   var service = {};
   Array.prototype.contains = function(obj) {
     var i = this.length;
@@ -99,42 +99,61 @@ aystore.factory('DayAndTimeTest', ['', function(){
       }
     }
     return false;
-  }
-
-  service.isDayInRange = function (date, ruleRaw) {
-      var day = new Date(date).getDay();
-      day = (day === 0) ? 7 : day;
-      var rule = ruleRaw.replace(/ /gi, ""); // 去空格，如："ff,  f, d ,f " -> "ff,f,d,f"
-      var arr = [];
-      var arr1 = rule.split(",");
-      var beg = 0;
-      var end = 0;
-      var item = "";
-      for (let i=0; i<arr1.length; i++) {
-        item = arr1[i];
-        if (/-/.test(item)) {
-          beg = parseInt(item.split("-")[0]);
-          end = parseInt(item.split("-")[1]);
-          while (beg <= end) {
-            arr.push(beg);
-            beg++;
-          }
-        } else {
-          arr.push(parseInt(item));
-        }
-      }
-      console.log(day);
-      console.log(arr);
-      console.log(arr.contains(day));
-      if (arr.contains(day)) {
-        return true;
-      } else {
-        return false;
-      }
   };
 
-   return service;
-}])
+  function nthMinute(time) {
+    time = time.replace(/ /gi, "");// 去空格
+    var arr = time.split(":");
+    var h = parseInt(arr[0]);
+    var m = parseInt(arr[1]);
+    return 60*h + m;
+  }
+
+  service.nthMinute = nthMinute;
+
+  service.isDayInRange = function (date, range) {
+    var day = new Date(date).getDay();
+    day = (day === 0) ? 7 : day;
+    range = range.replace(/ /gi, ""); // 去空格，如："ff,  f, d ,f " -> "ff,f,d,f"
+    var arr = [];
+    var arr1 = range.split(",");
+    var beg = 0;
+    var end = 0;
+    var item = "";
+    for (let i=0; i<arr1.length; i++) {
+      item = arr1[i];
+      if (/-/.test(item)) {
+        beg = parseInt(item.split("-")[0]);
+        end = parseInt(item.split("-")[1]);
+        while (beg <= end) {
+          arr.push(beg);
+          beg++;
+        }
+      } else {
+        arr.push(parseInt(item));
+      }
+    }
+    console.log(day);
+    console.log(arr);
+    console.log(arr.contains(day));
+    if (arr.contains(day)) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  service.isTimeInRange = function (time, range) {
+    range = range.replace(/ /gi, "");
+    var arr = range.split("-");
+    var beg = nthMinute(arr[0]);
+    var end = nthMinute(arr[1]);
+    var time = nthMinute(time);
+    return time >= beg && time <= end;
+  };
+
+  return service;
+});
 
 var goback = function() {
   return window.history.back();
@@ -229,6 +248,7 @@ aystore.controller('AycultureController', function($rootScope, $scope, $http) {
       alert('error');
     });
 });
+
 // 文章详情页控制
 aystore.controller('ArtdetailController', function($rootScope, $scope, $http) {
   $scope.pageTitle = "文章详情";
@@ -299,7 +319,7 @@ aystore.controller('StrdetailController', function($rootScope, $scope, $http, $t
     }, function() {
       alert('error');
     });
-
+  // 日期选择插件
   $scope.setDate = function () {
     jeDate({
       dateCell: "#dateinput",
@@ -308,7 +328,7 @@ aystore.controller('StrdetailController', function($rootScope, $scope, $http, $t
       isTime: true
     });
   };
-
+  // 复选框插件
   $timeout(function () {
     $('input').iCheck({
        checkboxClass: 'icheckbox_polaris'
@@ -317,46 +337,54 @@ aystore.controller('StrdetailController', function($rootScope, $scope, $http, $t
     });
   });
 
-  // 订单管理
+  // 订单数据管理
   var order = {
     'ordId': 'adafdfefdvefsdvsd1213',
     'creTime': new Date().getTime(),
     'custId': 'sjdkfjsdfweioje12',
     'phone': 1234567,
     'srvTime': '',
-    'aySrv': 0,
+    'aySrv': {
+      'name': '艾灸床保健',
+      'price': 0,
+      'num': 0
+    },
     'othSrv': []
   };
 
   function chooseService () {
     // 预定的保健时间
     order.srvTime = $('.sec-date input').val();
-    // 判断选定的时间位于哪个时间段
+    // 根据预定时间判断艾灸服务的价格
     var date = order.srvTime.split(" ")[0];
     var day = new Date(date).getDay();// 星期几
     var time = order.srvTime.split(" ")[1];
     console.log(time);
-    var aySrvPrice = $rootScope.aySrvPrice;
+    var aySrvPrice = $rootScope.strdetail.aySrvPrice;
+    console.log(aySrvPrice);
     var item = null;
-    var price =
-    // function getAySrvPrice (argument) {
-    //   // body...
-    // }
-    // for (let key in aySrvPrice) {
-    //   item = aySrvPrice[key];
-    //   if (DayAndTimeTest.isDayInRange(day, item.weekday)) {
-    //       return
-    //   }
-    // }
-
-
+    for (var i=0; i<aySrvPrice.length; i++) {
+      item = aySrvPrice[i];
+      if (DayAndTimeTest.isDayInRange(day, item.weekday)
+        && DayAndTimeTest.isTimeInRange(day, item.srvTime)) {
+          order.aySrv.price = item.price;
+      }
+    }
+    if (order.aySrv.price === 0) {
+      alert('日期不在规定范围内，请重新选择！');
+    }
     // 主服务
-    order.aySrv = $('.sec-aySrvPrice input').is(':checked') ? 1 : 0;
+    order.aySrv.num = $('.sec-aySrvPrice input').is(':checked') ? 1 : 0;
     // 其他服务
+    var i = 0;
     $('.sec-othSrvPrice input').each(function(index, el) {
       var name = $(this).attr('name');
-      var value = $(this).is(':checked') ? 1 : 0;
-      order.othSrv[name] = value;
+      var num = $(this).is(':checked') ? 1 : 0;
+      order.othSrv[i++] = {
+        'name': name,
+        'price': 0,
+        'num': num
+      };
     });
     // 人数的选择
 
