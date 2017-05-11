@@ -102,7 +102,7 @@ aystore.factory('DayAndTimeTest', function(){
   };
 
   function nthMinute(time) {
-    time = time.replace(/ /gi, "");// 去空格
+    var time = (time+"").replace(/ /gi, "");// 去空格
     var arr = time.split(":");
     var h = parseInt(arr[0]);
     var m = parseInt(arr[1]);
@@ -133,9 +133,9 @@ aystore.factory('DayAndTimeTest', function(){
         arr.push(parseInt(item));
       }
     }
-    console.log(day);
-    console.log(arr);
-    console.log(arr.contains(day));
+    // console.log(day);
+    // console.log(arr);
+    // console.log(arr.contains(day));
     if (arr.contains(day)) {
       return true;
     } else {
@@ -303,6 +303,21 @@ aystore.controller('SettingController', function($rootScope, $scope) {
 
 // 店铺详情
 aystore.controller('StrdetailController', function($rootScope, $scope, $http, $timeout, $state, DayAndTimeTest) {
+  // 订单数据管理
+  var order = {
+    'ordId': 'adafdfefdvefsdvsd1213',
+    'creTime': new Date().getTime(),
+    'custId': 'sjdkfjsdfweioje12',
+    'phone': 1234567,
+    'srvTime': '',
+    'aySrv': {
+      'name': '艾灸床保健',
+      'price': 0,
+      'num': 0
+    },
+    'othSrv': []
+  };
+
   $http
     .get('data/strdetail.json', {
       params: {
@@ -337,20 +352,7 @@ aystore.controller('StrdetailController', function($rootScope, $scope, $http, $t
     });
   });
 
-  // 订单数据管理
-  var order = {
-    'ordId': 'adafdfefdvefsdvsd1213',
-    'creTime': new Date().getTime(),
-    'custId': 'sjdkfjsdfweioje12',
-    'phone': 1234567,
-    'srvTime': '',
-    'aySrv': {
-      'name': '艾灸床保健',
-      'price': 0,
-      'num': 0
-    },
-    'othSrv': []
-  };
+
 
   function chooseService () {
     // 预定的保健时间
@@ -359,35 +361,64 @@ aystore.controller('StrdetailController', function($rootScope, $scope, $http, $t
     var date = order.srvTime.split(" ")[0];
     var day = new Date(date).getDay();// 星期几
     var time = order.srvTime.split(" ")[1];
-    console.log(time);
+    console.log("选择的日期：" + date + " 星期几：" + day);
+    console.log("选择的时间：" + time);
     var aySrvPrice = $rootScope.strdetail.aySrvPrice;
-    console.log(aySrvPrice);
+    // console.log(aySrvPrice);
     var item = null;
     for (var i=0; i<aySrvPrice.length; i++) {
       item = aySrvPrice[i];
-      if (DayAndTimeTest.isDayInRange(day, item.weekday)
-        && DayAndTimeTest.isTimeInRange(day, item.srvTime)) {
+      console.log("");
+      console.log(item.weekday + " " + item.srvTime);
+      if (DayAndTimeTest.isDayInRange(day, item.weekday)) {
+        console.log("日期在范围内");
+        if (DayAndTimeTest.isTimeInRange(time, item.srvTime)) {
+          console.log("时间也在范围内");
           order.aySrv.price = item.price;
+        } else {
+          console.log("但时间不在范围内");
+        }
+      } else {
+        console.log("日期不在范围内");
       }
+      // if (DayAndTimeTest.isDayInRange(day, item.weekday)
+      //   && DayAndTimeTest.isTimeInRange(day, item.srvTime)) {
+      //     console.log(item.weekday + " " + item.srvTime);
+      //     order.aySrv.price = item.price;
+      // }
     }
     if (order.aySrv.price === 0) {
       alert('日期不在规定范围内，请重新选择！');
+      return;
     }
     // 主服务
     order.aySrv.num = $('.sec-aySrvPrice input').is(':checked') ? 1 : 0;
-    // 其他服务
-    var i = 0;
-    $('.sec-othSrvPrice input').each(function(index, el) {
-      var name = $(this).attr('name');
-      var num = $(this).is(':checked') ? 1 : 0;
-      order.othSrv[i++] = {
-        'name': name,
-        'price': 0,
-        'num': num
-      };
-    });
-    // 人数的选择
 
+
+
+    // 其他服务的 post 数据构造
+    var othSrvPrice = $rootScope.strdetail.othSrvPrice;
+    $('.sec-othSrvPrice input').each(function(index, el) {
+      if ($(this).is(':checked')) {
+        order.othSrv.push({
+          'inputName': othSrvPrice[index].inputName,
+          'name': othSrvPrice[index].srvName,
+          'price': othSrvPrice[index].price,
+          'num': 1
+        });
+      }
+    });
+
+    // 必须选择一个服务
+    console.log(order.aySrv.num === 0);
+    console.log(order.othSrv.length === 0);
+    if (order.aySrv.num === 0 && order.othSrv.length === 0) {
+      alert("请至少选择一项服务");
+      return;
+    }
+
+
+    console.log("订单数据：");
     console.log(order);
     $rootScope.order = order;
     $state.go('detail.pay');
@@ -400,6 +431,17 @@ aystore.controller('StrdetailController', function($rootScope, $scope, $http, $t
 
 // 支付
 aystore.controller('PayController', function($rootScope, $scope, $http) {
+
+  var order = $rootScope.order;
+
+
+
+
+  var total = order.aySrv.num * order.aySrv.price;
+  var item = order.othSrv;
+  for (var i = 0; i < item.length; i++) {
+    total += item[i].price * item[i].num;
+  }
 
 });
 

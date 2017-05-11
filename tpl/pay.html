@@ -9,19 +9,19 @@
 <div id="pay">
   <header class="header">
     <div class="p1">
-      ￥<span class="">待计算</span>
+      ￥<span class="">{{total}}</span>
     </div>
     <div class="p2">
       预定时间：<span>{{order.srvTime}}</span>
     </div>
   </header>
-  <ul class="part1">
-    <li class="part1-item" ng-show="order.aySrv">
+  <ul class="part1 clearfloat">
+    <li class="part1-item" ng-show="order.aySrv.num">
       <ul>
         <li class="service">艾灸床保健:</li>
         <li class="price"><span class="txt-number" data-price="price">100</span> 元/小时</li>
         <li class="num">
-          <select name="" id="">
+          <select name="" id="aySrv">
             <option value="">1人</option>
             <option value="">2人</option>
             <option value="">3人</option>
@@ -32,12 +32,12 @@
         </li>
       </ul>
     </li>
-    <li class="part1-item"  ng-repeat="(key,value) in order.othSrv">
+    <li class="part1-item"  ng-repeat="item in order.othSrv">
       <ul>
-        <li class="service">{{key}}}</li>
-        <li class="price"><span class="data-price txt-number">{{strdetail.aySrvPrice[]}}</span> 元/小时</li>
+        <li class="service">{{item.name}}</li>
+        <li class="price"><span class="data-price txt-number">{{item.price}}</span> 元/小时</li>
         <li class="num">
-          <select name="" id="">
+          <select name="{{item.name}}" id="">
             <option value="1">1人</option>
             <option value="2">2人</option>
             <option value="3">3人</option>
@@ -94,21 +94,23 @@
       </div>
     </li>
   </ul>
-  <div class="part3">
-    <form class="clearfloat">
-      <label class="wx" for="wx">
-        <div class="radio-wrapper">
-          <input type="radio" id="wx" name="pay">
-        </div>
-        <img src="img/wxpay.jpg" alt="">
-      </label>
-      <label class="ali" for="ali">
-        <div class="radio-wrapper">
-          <input type="radio" id="ali" name="pay">
-        </div>
-        <img src="img/alipay.png" alt="">
-      </label>
-    </form>
-  </div>
+
+  <form class="part3 clearfloat">
+    <label class="wx" for="wx">
+      <div class="radio-wrapper">
+        <input type="radio" id="wx" name="pay">
+      </div>
+      <img src="img/wxpay.jpg" alt="">
+    </label>
+    <label class="ali" for="ali">
+      <div class="radio-wrapper">
+        <input type="radio" id="ali" name="pay">
+      </div>
+      <img src="img/alipay.png" alt="">
+    </label>
+  </form>
+
+  <a href="pay-successful.html" class="btn btn-long btn-blue">支付</a>
 </div>
-<a href="pay-successful.html" class="btn btn-long btn-blue">支付</a>
+
+
