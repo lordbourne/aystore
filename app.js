@@ -311,6 +311,7 @@ aystore.controller('StrdetailController', function($rootScope, $scope, $http, $t
     'phone': 1234567,
     'srvTime': '',
     'aySrv': {
+      'inputName': "ay",
       'name': '艾灸床保健',
       'price': 0,
       'num': 0
@@ -430,18 +431,55 @@ aystore.controller('StrdetailController', function($rootScope, $scope, $http, $t
 });
 
 // 支付
-aystore.controller('PayController', function($rootScope, $scope, $http) {
-
-  var order = $rootScope.order;
-
-
-
-
-  var total = order.aySrv.num * order.aySrv.price;
-  var item = order.othSrv;
-  for (var i = 0; i < item.length; i++) {
-    total += item[i].price * item[i].num;
+aystore.controller('PayController', function($rootScope, $scope, $timeout) {
+  // 根据 order 的变动实时改变总价
+  function updateTotal() {
+    var order = $rootScope.order;
+    var total = 0;
+    total += order.aySrv.num * order.aySrv.price;
+    var item = order.othSrv;
+    for (var i = 0; i < item.length; i++) {
+      total += item[i].price * item[i].num;
+    }
+    $timeout(function () {
+      $scope.total = total;
+    });
+    console.log(total);
   }
+  function updateTotalUsingJQ() {
+    var order = $rootScope.order;
+    var total = 0;
+    total += order.aySrv.num * order.aySrv.price;
+    var item = order.othSrv;
+    for (var i = 0; i < item.length; i++) {
+      total += item[i].price * item[i].num;
+    }
+    $('#total').html(total);
+  }
+  updateTotal();
+
+  // 绑定事件，实时显示总价
+  $('select').each(function(index, el) {
+    $(this).change(function() {
+      var val = parseInt($(this).val());
+      $rootScope.order.othSrv[index].num = val;
+      console.log(index + " " + val);
+      updateTotal();
+    });
+  });
+
+  // $('.part1 select.aysrv').change(function () {
+  //   console.log($(this).val());
+  //   var val = parseInt($(this).val());
+  //   $rootScope.order.aySrv.num = val;
+  //   // updateTotal();
+  //   updateTotalUsingJQ();
+  // });
+
+
+  // $('.part1 select.othsrv').change(function(event) {
+  //   console.log($(this).val());
+  // });
 
 });
 

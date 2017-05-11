@@ -5,112 +5,112 @@
     </a>
     成都艾瑞建设路保健养生店
   </div>
+
+  <div id="pay">
+    <header class="header">
+      <div class="p1">
+        ￥<span id="total">{{total}}</span>
+      </div>
+      <div class="p2">
+        预定时间：<span>{{order.srvTime}}</span>
+      </div>
+    </header>
+    <ul class="part1 clearfloat">
+      <li class="part1-item" ng-show="order.aySrv.num">
+        <ul>
+          <li class="service">艾灸床保健:</li>
+          <li class="price"><span class="txt-number">{{order.aySrv.price}}</span> 元/小时</li>
+          <li class="num">
+            <select class="aysrv" id="aysrv" data-price="{{order.aySrv.price}}" data-inputName="{{order.aySrv.inputName}}">
+              <option value="1">1人</option>
+              <option value="2">2人</option>
+              <option value="3">3人</option>
+              <option value="4">4人</option>
+              <option value="5">5人</option>
+              <option value="6">6人</option>
+            </select>
+          </li>
+        </ul>
+      </li>
+      <li class="part1-item"  ng-repeat="item in order.othSrv">
+        <ul>
+          <li class="service">{{item.name}}</li>
+          <li class="price"><span class="data-price txt-number">{{item.price}}</span> 元/小时</li>
+          <li class="num">
+            <select class="othsrv" name="{{item.name}}" data-price="{{item.price}}" data-inputName="{{item.inputName}}">
+              <option value="1">1人</option>
+              <option value="2">2人</option>
+              <option value="3">3人</option>
+              <option value="4">4人</option>
+              <option value="5">5人</option>
+              <option value="6">6人</option>
+            </select>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul class="part2">
+      <li class="clearfloat">
+        <div class="item clearfloat">
+          <div class="icon">
+            <img src="img/name.png" alt="">
+          </div>
+          <div class="info">
+            <span class="key">姓名</span>
+            <span class="value">赵旭日</span>
+          </div>
+        </div>
+        <div class="other-info">
+        </div>
+      </li>
+      <li class="clearfloat">
+        <div class="item clearfloat">
+          <div class="icon">
+            <img src="img/phone.png" alt="">
+          </div>
+          <div class="info">
+            <span class="key">电话</span>
+            <span class="value">13855844754</span>
+          </div>
+        </div>
+        <div class="other-info">
+          （手机号为账号查保健记录）
+        </div>
+      </li>
+      <li class="clearfloat">
+        <div class="item clearfloat">
+          <div class="icon">
+            <img src="img/pay.png" alt="">
+          </div>
+          <div class="info">
+            <span class="key">余额支付</span>
+            <span class="value"><span class="txt-number">￥<span data-price="price">270</span></span> 元</span>
+          </div>
+        </div>
+        <div class="other-info">
+          <span class="info-left">线上支付享受 <span class="txt-number" data-price="price">9</span> 折优惠</span>
+          <span class="info-right">余额：<span class="txt-number" data-price="price">455</span> 元</span>
+        </div>
+      </li>
+    </ul>
+
+    <form class="part3 clearfloat">
+      <label class="wx" for="wx">
+        <div class="radio-wrapper">
+          <input type="radio" id="wx" name="pay">
+        </div>
+        <img src="img/wxpay.jpg" alt="">
+      </label>
+      <label class="ali" for="ali">
+        <div class="radio-wrapper">
+          <input type="radio" id="ali" name="pay">
+        </div>
+        <img src="img/alipay.png" alt="">
+      </label>
+    </form>
+
+    <a href="pay-successful.html" class="btn btn-long btn-blue">支付</a>
+  </div>
+
 </div>
-<div id="pay">
-  <header class="header">
-    <div class="p1">
-      ￥<span class="">{{total}}</span>
-    </div>
-    <div class="p2">
-      预定时间：<span>{{order.srvTime}}</span>
-    </div>
-  </header>
-  <ul class="part1 clearfloat">
-    <li class="part1-item" ng-show="order.aySrv.num">
-      <ul>
-        <li class="service">艾灸床保健:</li>
-        <li class="price"><span class="txt-number" data-price="price">100</span> 元/小时</li>
-        <li class="num">
-          <select name="" id="aySrv">
-            <option value="">1人</option>
-            <option value="">2人</option>
-            <option value="">3人</option>
-            <option value="">4人</option>
-            <option value="">5人</option>
-            <option value="">6人</option>
-          </select>
-        </li>
-      </ul>
-    </li>
-    <li class="part1-item"  ng-repeat="item in order.othSrv">
-      <ul>
-        <li class="service">{{item.name}}</li>
-        <li class="price"><span class="data-price txt-number">{{item.price}}</span> 元/小时</li>
-        <li class="num">
-          <select name="{{item.name}}" id="">
-            <option value="1">1人</option>
-            <option value="2">2人</option>
-            <option value="3">3人</option>
-            <option value="4">4人</option>
-            <option value="5">5人</option>
-            <option value="6">6人</option>
-          </select>
-        </li>
-      </ul>
-    </li>
-  </ul>
-
-  <ul class="part2">
-    <li class="clearfloat">
-      <div class="item clearfloat">
-        <div class="icon">
-          <img src="img/name.png" alt="">
-        </div>
-        <div class="info">
-          <span class="key">姓名</span>
-          <span class="value">赵旭日</span>
-        </div>
-      </div>
-      <div class="other-info">
-      </div>
-    </li>
-    <li class="clearfloat">
-      <div class="item clearfloat">
-        <div class="icon">
-          <img src="img/phone.png" alt="">
-        </div>
-        <div class="info">
-          <span class="key">电话</span>
-          <span class="value">13855844754</span>
-        </div>
-      </div>
-      <div class="other-info">
-        （手机号为账号查保健记录）
-      </div>
-    </li>
-    <li class="clearfloat">
-      <div class="item clearfloat">
-        <div class="icon">
-          <img src="img/pay.png" alt="">
-        </div>
-        <div class="info">
-          <span class="key">余额支付</span>
-          <span class="value"><span class="txt-number">￥<span data-price="price">270</span></span> 元</span>
-        </div>
-      </div>
-      <div class="other-info">
-        <span class="info-left">线上支付享受 <span class="txt-number" data-price="price">9</span> 折优惠</span>
-        <span class="info-right">余额：<span class="txt-number" data-price="price">455</span> 元</span>
-      </div>
-    </li>
-  </ul>
-
-  <form class="part3 clearfloat">
-    <label class="wx" for="wx">
-      <div class="radio-wrapper">
-        <input type="radio" id="wx" name="pay">
-      </div>
-      <img src="img/wxpay.jpg" alt="">
-    </label>
-    <label class="ali" for="ali">
-      <div class="radio-wrapper">
-        <input type="radio" id="ali" name="pay">
-      </div>
-      <img src="img/alipay.png" alt="">
-    </label>
-  </form>
-
-  <a href="pay-successful.html" class="btn btn-long btn-blue">支付</a>
-</div>
-
-
