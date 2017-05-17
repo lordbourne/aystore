@@ -263,10 +263,25 @@ aystore.controller('ArtdetailController', function($rootScope, $scope, $http) {
     console.log(res);
     $rootScope.art = res.data.data;
     $scope.art = res.data.data;
-
   }, function() {
     alert('error');
   });
+
+  // 点赞与收藏控制，数据保存
+  var artForm = {
+
+  };
+  $('#like').find('img').click(function(event) {
+    $(this).toggleClass('inactive');
+
+
+  });
+  $('#collect').find('img').click(function(event) {
+    $(this).toggleClass('inactive');
+  });
+
+
+
 });
 
 // 我的页控制器
@@ -459,22 +474,27 @@ aystore.controller('PayController', function($rootScope, $scope, $timeout) {
   updateTotal();
 
   // 绑定事件，实时显示总价
-  $('select').each(function(index, el) {
-    $(this).change(function() {
-      var val = parseInt($(this).val());
-      $rootScope.order.othSrv[index].num = val;
-      console.log(index + " " + val);
-      updateTotal();
-    });
+  console.log( $('#aysrv') );
+  $('#aysrv').change(function() {
+    var val = parseInt($(this).val());
+    $rootScope.order.aySrv.num = val;
+    updateTotal();
   });
 
-  // $('.part1 select.aysrv').change(function () {
-  //   console.log($(this).val());
-  //   var val = parseInt($(this).val());
-  //   $rootScope.order.aySrv.num = val;
-  //   // updateTotal();
-  //   updateTotalUsingJQ();
-  // });
+  $timeout(function () {
+    console.log($('.part1').find('.othsrv'));
+    $('.part1 select.othsrv').each(function (index, el) {
+      $(this).change(function () {
+        var val = parseInt($(this).val());
+        console.log(val);
+        $rootScope.order.othSrv[index].num = val;
+        updateTotal();
+      });
+    });
+  }, 1500);
+
+
+
 
 
   // $('.part1 select.othsrv').change(function(event) {
