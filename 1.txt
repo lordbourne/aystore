@@ -1,1 +1,716 @@
-[{"statusCode":200,"body":{"access_token":"81TlM22PTpX2cwQJxXw_M0GvWdM_jNkC1qRQNcfXX2sCWLT5-ShJ7jcoM7LHIHisjdntYDvnenK0QRW4Be4jgFJaROmZah20-m8wGzQUI3O5u5Jw30OwdPLa8hIfG2wzKXPcAEAGTL","expires_in":7200},"headers":{"connection":"close","content-type":"application/json; encoding=utf-8","date":"Tue, 16 May 2017 08:22:36 GMT","content-length":"175"},"request":{"uri":{"protocol":"https:","slashes":true,"auth":null,"host":"api.weixin.qq.com","port":443,"hostname":"api.weixin.qq.com","hash":null,"search":"?grant_type=client_credential&appid=wxa35db8e13ffe5d16&secret=24ba3a5eb9537f322f1b25fe6c244add","query":"grant_type=client_credential&appid=wxa35db8e13ffe5d16&secret=24ba3a5eb9537f322f1b25fe6c244add","pathname":"/cgi-bin/token","path":"/cgi-bin/token?grant_type=client_credential&appid=wxa35db8e13ffe5d16&secret=24ba3a5eb9537f322f1b25fe6c244add","href":"https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wxa35db8e13ffe5d16&secret=24ba3a5eb9537f322f1b25fe6c244add"},"method":"GET","headers":{"accept":"application/json"}}},{"access_token":"81TlM22PTpX2cwQJxXw_M0GvWdM_jNkC1qRQNcfXX2sCWLT5-ShJ7jcoM7LHIHisjdntYDvnenK0QRW4Be4jgFJaROmZah20-m8wGzQUI3O5u5Jw30OwdPLa8hIfG2wzKXPcAEAGTL","expires_in":7200}]
+卷 Documents 的文件夹 PATH 列表
+卷序列号为 9A5C-6762
+E:\PROJECTS\127.0.0.1\AYSTORE
+├─css
+│  └─icheck
+│      ├─demo
+│      │  ├─css
+│      │  │  └─ie
+│      │  └─js
+│      └─skins
+│          ├─flat
+│          ├─futurico
+│          ├─line
+│          ├─minimal
+│          ├─polaris
+│          └─square
+├─data
+│  └─art
+├─img
+├─js
+│  ├─angular
+│  └─skin
+├─less
+├─node_modules
+│  ├─.bin
+│  ├─abbrev
+│  ├─angular
+│  ├─angular-ui-router
+│  │  ├─release
+│  │  └─src
+│  ├─ansi-regex
+│  ├─ansi-styles
+│  ├─argparse
+│  │  └─lib
+│  │      ├─action
+│  │      │  ├─append
+│  │      │  └─store
+│  │      ├─argument
+│  │      └─help
+│  ├─array-find-index
+│  ├─async
+│  │  ├─dist
+│  │  └─lib
+│  ├─balanced-match
+│  ├─brace-expansion
+│  ├─builtin-modules
+│  ├─camelcase
+│  ├─camelcase-keys
+│  ├─chalk
+│  ├─coffee-script
+│  │  ├─bin
+│  │  └─lib
+│  │      └─coffee-script
+│  ├─colors
+│  │  ├─examples
+│  │  ├─lib
+│  │  │  ├─custom
+│  │  │  ├─maps
+│  │  │  └─system
+│  │  └─themes
+│  ├─concat-map
+│  │  ├─example
+│  │  └─test
+│  ├─currently-unhandled
+│  ├─dateformat
+│  │  ├─bin
+│  │  ├─lib
+│  │  └─test
+│  │      └─weekofyear
+│  ├─decamelize
+│  ├─error-ex
+│  ├─escape-string-regexp
+│  ├─esprima
+│  │  └─bin
+│  ├─eventemitter2
+│  │  └─lib
+│  ├─exit
+│  │  ├─lib
+│  │  └─test
+│  │      └─fixtures
+│  ├─find-up
+│  ├─findup-sync
+│  │  ├─lib
+│  │  └─node_modules
+│  │      └─glob
+│  ├─fs.realpath
+│  ├─get-stdin
+│  ├─getobject
+│  │  ├─lib
+│  │  └─test
+│  ├─glob
+│  ├─graceful-fs
+│  ├─grunt
+│  │  ├─bin
+│  │  ├─lib
+│  │  │  ├─grunt
+│  │  │  └─util
+│  │  └─node_modules
+│  │      ├─.bin
+│  │      └─grunt-cli
+│  │          ├─bin
+│  │          ├─completion
+│  │          └─lib
+│  ├─grunt-known-options
+│  ├─grunt-legacy-log
+│  │  └─test
+│  ├─grunt-legacy-log-utils
+│  │  └─node_modules
+│  │      └─lodash
+│  │          └─fp
+│  ├─grunt-legacy-util
+│  │  ├─node_modules
+│  │  │  └─lodash
+│  │  │      └─fp
+│  │  └─test
+│  │      └─fixtures
+│  ├─has-ansi
+│  ├─hooker
+│  │  ├─dist
+│  │  ├─lib
+│  │  └─test
+│  ├─hosted-git-info
+│  ├─iconv-lite
+│  │  ├─encodings
+│  │  │  └─tables
+│  │  └─lib
+│  ├─indent-string
+│  ├─inflight
+│  ├─inherits
+│  ├─is-arrayish
+│  ├─is-builtin-module
+│  ├─is-finite
+│  ├─is-utf8
+│  ├─isexe
+│  │  └─test
+│  ├─js-yaml
+│  │  ├─bin
+│  │  ├─dist
+│  │  └─lib
+│  │      └─js-yaml
+│  │          ├─schema
+│  │          └─type
+│  │              └─js
+│  ├─load-json-file
+│  ├─lodash
+│  │  ├─array
+│  │  ├─chain
+│  │  ├─collection
+│  │  ├─date
+│  │  ├─function
+│  │  ├─internal
+│  │  ├─lang
+│  │  ├─math
+│  │  ├─number
+│  │  ├─object
+│  │  ├─string
+│  │  └─utility
+│  ├─loud-rejection
+│  ├─map-obj
+│  ├─meow
+│  ├─minimatch
+│  ├─minimist
+│  │  ├─example
+│  │  └─test
+│  ├─nopt
+│  │  ├─bin
+│  │  ├─examples
+│  │  ├─lib
+│  │  └─test
+│  ├─normalize-package-data
+│  │  └─lib
+│  ├─number-is-nan
+│  ├─object-assign
+│  ├─once
+│  ├─parse-json
+│  │  └─vendor
+│  ├─path-exists
+│  ├─path-is-absolute
+│  ├─path-type
+│  ├─pify
+│  ├─pinkie
+│  ├─pinkie-promise
+│  ├─read-pkg
+│  ├─read-pkg-up
+│  ├─redent
+│  ├─repeating
+│  ├─resolve
+│  │  ├─example
+│  │  ├─lib
+│  │  └─test
+│  │      ├─dotdot
+│  │      │  └─abc
+│  │      ├─module_dir
+│  │      │  ├─xmodules
+│  │      │  │  └─aaa
+│  │      │  ├─ymodules
+│  │      │  │  └─aaa
+│  │      │  └─zmodules
+│  │      │      └─bbb
+│  │      ├─node_path
+│  │      │  ├─x
+│  │      │  │  ├─aaa
+│  │      │  │  └─ccc
+│  │      │  └─y
+│  │      │      ├─bbb
+│  │      │      └─ccc
+│  │      ├─pathfilter
+│  │      │  └─deep_ref
+│  │      │      └─node_modules
+│  │      │          └─deep
+│  │      │              └─deeper
+│  │      ├─precedence
+│  │      │  ├─aaa
+│  │      │  └─bbb
+│  │      ├─resolver
+│  │      │  ├─bar
+│  │      │  │  └─node_modules
+│  │      │  │      └─foo
+│  │      │  ├─baz
+│  │      │  ├─biz
+│  │      │  │  └─node_modules
+│  │      │  │      ├─garply
+│  │      │  │      │  └─lib
+│  │      │  │      ├─grux
+│  │      │  │      └─tiv
+│  │      │  ├─incorrect_main
+│  │      │  ├─other_path
+│  │      │  │  └─lib
+│  │      │  ├─punycode
+│  │      │  │  └─node_modules
+│  │      │  │      └─punycode
+│  │      │  ├─quux
+│  │      │  │  └─foo
+│  │      │  └─without_basedir
+│  │      │      └─node_modules
+│  │      └─subdirs
+│  │          └─node_modules
+│  │              └─a
+│  │                  └─b
+│  │                      └─c
+│  ├─rimraf
+│  │  └─test
+│  ├─semver
+│  │  └─bin
+│  ├─signal-exit
+│  ├─spdx-correct
+│  ├─spdx-expression-parse
+│  ├─spdx-license-ids
+│  ├─sprintf-js
+│  │  ├─demo
+│  │  ├─dist
+│  │  ├─src
+│  │  └─test
+│  ├─strip-ansi
+│  ├─strip-bom
+│  ├─strip-indent
+│  ├─supports-color
+│  ├─trim-newlines
+│  ├─underscore.string
+│  │  ├─dist
+│  │  └─helper
+│  ├─validate-npm-package-license
+│  ├─which
+│  │  └─bin
+│  └─wrappy
+├─res
+│  ├─Ay-old-version
+│  │  ├─css
+│  │  ├─icon
+│  │  ├─img
+│  │  │  ├─demo-files
+│  │  │  ├─PNG
+│  │  │  └─SVG
+│  │  ├─js
+│  │  └─position
+│  │      ├─demo-files
+│  │      ├─PNG
+│  │      └─SVG
+│  ├─ThinkPHP3.1.2_Core
+│  │  ├─Admin
+│  │  │  ├─Common
+│  │  │  ├─Conf
+│  │  │  ├─Lang
+│  │  │  ├─Lib
+│  │  │  │  ├─Action
+│  │  │  │  ├─Behavior
+│  │  │  │  ├─Model
+│  │  │  │  └─Widget
+│  │  │  ├─Runtime
+│  │  │  │  ├─Cache
+│  │  │  │  ├─Data
+│  │  │  │  ├─Logs
+│  │  │  │  └─Temp
+│  │  │  └─Tpl
+│  │  ├─App
+│  │  │  ├─Common
+│  │  │  ├─Conf
+│  │  │  ├─Lang
+│  │  │  ├─Lib
+│  │  │  │  ├─Action
+│  │  │  │  ├─Behavior
+│  │  │  │  ├─Model
+│  │  │  │  └─Widget
+│  │  │  ├─Runtime
+│  │  │  │  ├─Cache
+│  │  │  │  ├─Data
+│  │  │  │  ├─Logs
+│  │  │  │  └─Temp
+│  │  │  └─Tpl
+│  │  │      └─Index
+│  │  └─ThinkPHP
+│  │      ├─Common
+│  │      ├─Conf
+│  │      ├─Extend
+│  │      ├─Lang
+│  │      ├─Lib
+│  │      │  ├─Behavior
+│  │      │  ├─Core
+│  │      │  ├─Driver
+│  │      │  │  ├─Cache
+│  │      │  │  ├─Db
+│  │      │  │  └─TagLib
+│  │      │  └─Template
+│  │      └─Tpl
+│  ├─tp5
+│  │  ├─application
+│  │  │  ├─extra
+│  │  │  └─index
+│  │  │      └─controller
+│  │  ├─extend
+│  │  ├─public
+│  │  │  └─static
+│  │  ├─runtime
+│  │  │  └─log
+│  │  │      └─201703
+│  │  ├─tests
+│  │  ├─thinkphp
+│  │  │  ├─lang
+│  │  │  ├─library
+│  │  │  │  ├─think
+│  │  │  │  │  ├─cache
+│  │  │  │  │  │  └─driver
+│  │  │  │  │  ├─config
+│  │  │  │  │  │  └─driver
+│  │  │  │  │  ├─console
+│  │  │  │  │  │  ├─bin
+│  │  │  │  │  │  ├─command
+│  │  │  │  │  │  │  ├─make
+│  │  │  │  │  │  │  │  └─stubs
+│  │  │  │  │  │  │  └─optimize
+│  │  │  │  │  │  ├─input
+│  │  │  │  │  │  └─output
+│  │  │  │  │  │      ├─descriptor
+│  │  │  │  │  │      ├─driver
+│  │  │  │  │  │      ├─formatter
+│  │  │  │  │  │      └─question
+│  │  │  │  │  ├─controller
+│  │  │  │  │  ├─db
+│  │  │  │  │  │  ├─builder
+│  │  │  │  │  │  ├─connector
+│  │  │  │  │  │  └─exception
+│  │  │  │  │  ├─debug
+│  │  │  │  │  ├─exception
+│  │  │  │  │  ├─log
+│  │  │  │  │  │  └─driver
+│  │  │  │  │  ├─model
+│  │  │  │  │  │  └─relation
+│  │  │  │  │  ├─paginator
+│  │  │  │  │  │  └─driver
+│  │  │  │  │  ├─process
+│  │  │  │  │  │  ├─exception
+│  │  │  │  │  │  └─pipes
+│  │  │  │  │  ├─response
+│  │  │  │  │  ├─session
+│  │  │  │  │  │  └─driver
+│  │  │  │  │  ├─template
+│  │  │  │  │  │  ├─driver
+│  │  │  │  │  │  └─taglib
+│  │  │  │  │  └─view
+│  │  │  │  │      └─driver
+│  │  │  │  └─traits
+│  │  │  │      ├─controller
+│  │  │  │      ├─model
+│  │  │  │      └─think
+│  │  │  └─tpl
+│  │  └─vendor
+│  │      ├─bin
+│  │      ├─composer
+│  │      ├─doctrine
+│  │      │  └─instantiator
+│  │      │      ├─src
+│  │      │      │  └─Doctrine
+│  │      │      │      └─Instantiator
+│  │      │      │          └─Exception
+│  │      │      └─tests
+│  │      │          └─DoctrineTest
+│  │      │              ├─InstantiatorPerformance
+│  │      │              ├─InstantiatorTest
+│  │      │              │  └─Exception
+│  │      │              └─InstantiatorTestAsset
+│  │      ├─phpdocumentor
+│  │      │  ├─reflection-common
+│  │      │  │  ├─src
+│  │      │  │  └─tests
+│  │      │  │      ├─common
+│  │      │  │      └─unit
+│  │      │  ├─reflection-docblock
+│  │      │  │  ├─examples
+│  │      │  │  │  └─playing-with-descriptions
+│  │      │  │  ├─src
+│  │      │  │  │  └─DocBlock
+│  │      │  │  │      └─Tags
+│  │      │  │  │          ├─Factory
+│  │      │  │  │          └─Formatter
+│  │      │  │  └─tests
+│  │      │  │      ├─integration
+│  │      │  │      └─unit
+│  │      │  │          └─DocBlock
+│  │      │  │              └─Tags
+│  │      │  │                  └─Formatter
+│  │      │  └─type-resolver
+│  │      │      ├─examples
+│  │      │      ├─src
+│  │      │      │  └─Types
+│  │      │      └─tests
+│  │      │          └─unit
+│  │      │              └─Types
+│  │      ├─phpspec
+│  │      │  └─prophecy
+│  │      │      ├─fixtures
+│  │      │      ├─spec
+│  │      │      │  └─Prophecy
+│  │      │      │      ├─Argument
+│  │      │      │      │  └─Token
+│  │      │      │      ├─Call
+│  │      │      │      ├─Comparator
+│  │      │      │      ├─Doubler
+│  │      │      │      │  ├─ClassPatch
+│  │      │      │      │  └─Generator
+│  │      │      │      │      └─Node
+│  │      │      │      ├─Exception
+│  │      │      │      │  ├─Call
+│  │      │      │      │  ├─Doubler
+│  │      │      │      │  ├─Prediction
+│  │      │      │      │  └─Prophecy
+│  │      │      │      ├─Prediction
+│  │      │      │      ├─Promise
+│  │      │      │      ├─Prophecy
+│  │      │      │      └─Util
+│  │      │      ├─src
+│  │      │      │  └─Prophecy
+│  │      │      │      ├─Argument
+│  │      │      │      │  └─Token
+│  │      │      │      ├─Call
+│  │      │      │      ├─Comparator
+│  │      │      │      ├─Doubler
+│  │      │      │      │  ├─ClassPatch
+│  │      │      │      │  └─Generator
+│  │      │      │      │      └─Node
+│  │      │      │      ├─Exception
+│  │      │      │      │  ├─Call
+│  │      │      │      │  ├─Doubler
+│  │      │      │      │  ├─Prediction
+│  │      │      │      │  └─Prophecy
+│  │      │      │      ├─PhpDocumentor
+│  │      │      │      ├─Prediction
+│  │      │      │      ├─Promise
+│  │      │      │      ├─Prophecy
+│  │      │      │      └─Util
+│  │      │      └─tests
+│  │      │          └─Doubler
+│  │      │              └─Generator
+│  │      ├─phpunit
+│  │      │  ├─php-code-coverage
+│  │      │  │  ├─build
+│  │      │  │  ├─scripts
+│  │      │  │  ├─src
+│  │      │  │  │  └─CodeCoverage
+│  │      │  │  │      ├─Driver
+│  │      │  │  │      ├─Exception
+│  │      │  │  │      ├─Report
+│  │      │  │  │      │  ├─HTML
+│  │      │  │  │      │  │  └─Renderer
+│  │      │  │  │      │  │      └─Template
+│  │      │  │  │      │  │          ├─css
+│  │      │  │  │      │  │          ├─fonts
+│  │      │  │  │      │  │          └─js
+│  │      │  │  │      │  ├─Node
+│  │      │  │  │      │  └─XML
+│  │      │  │  │      │      └─File
+│  │      │  │  │      └─Util
+│  │      │  │  └─tests
+│  │      │  │      ├─PHP
+│  │      │  │      │  └─CodeCoverage
+│  │      │  │      │      └─Report
+│  │      │  │      └─_files
+│  │      │  ├─php-file-iterator
+│  │      │  │  └─src
+│  │      │  ├─php-text-template
+│  │      │  │  └─src
+│  │      │  ├─php-timer
+│  │      │  │  ├─src
+│  │      │  │  └─tests
+│  │      │  ├─php-token-stream
+│  │      │  │  ├─build
+│  │      │  │  ├─src
+│  │      │  │  │  └─Token
+│  │      │  │  │      └─Stream
+│  │      │  │  └─tests
+│  │      │  │      ├─Token
+│  │      │  │      └─_fixture
+│  │      │  ├─phpunit
+│  │      │  │  ├─src
+│  │      │  │  │  ├─Extensions
+│  │      │  │  │  ├─Framework
+│  │      │  │  │  │  ├─Assert
+│  │      │  │  │  │  ├─Constraint
+│  │      │  │  │  │  │  └─JsonMatches
+│  │      │  │  │  │  ├─Error
+│  │      │  │  │  │  └─TestSuite
+│  │      │  │  │  ├─Runner
+│  │      │  │  │  │  └─Filter
+│  │      │  │  │  │      └─Group
+│  │      │  │  │  ├─TextUI
+│  │      │  │  │  └─Util
+│  │      │  │  │      ├─Log
+│  │      │  │  │      ├─PHP
+│  │      │  │  │      │  └─Template
+│  │      │  │  │      └─TestDox
+│  │      │  │  │          └─ResultPrinter
+│  │      │  │  └─tests
+│  │      │  │      ├─Extensions
+│  │      │  │      ├─Fail
+│  │      │  │      ├─Framework
+│  │      │  │      │  └─Constraint
+│  │      │  │      │      └─JsonMatches
+│  │      │  │      ├─Regression
+│  │      │  │      │  ├─GitHub
+│  │      │  │      │  │  ├─1149
+│  │      │  │      │  │  ├─1216
+│  │      │  │      │  │  ├─1265
+│  │      │  │      │  │  ├─1330
+│  │      │  │      │  │  ├─1335
+│  │      │  │      │  │  ├─1337
+│  │      │  │      │  │  ├─1348
+│  │      │  │      │  │  ├─1351
+│  │      │  │      │  │  ├─1374
+│  │      │  │      │  │  ├─1437
+│  │      │  │      │  │  ├─1468
+│  │      │  │      │  │  ├─1471
+│  │      │  │      │  │  ├─1472
+│  │      │  │      │  │  ├─1570
+│  │      │  │      │  │  ├─2158
+│  │      │  │      │  │  ├─244
+│  │      │  │      │  │  ├─322
+│  │      │  │      │  │  ├─433
+│  │      │  │      │  │  ├─445
+│  │      │  │      │  │  ├─498
+│  │      │  │      │  │  ├─503
+│  │      │  │      │  │  ├─581
+│  │      │  │      │  │  ├─74
+│  │      │  │      │  │  ├─765
+│  │      │  │      │  │  ├─797
+│  │      │  │      │  │  └─873
+│  │      │  │      │  └─Trac
+│  │      │  │      │      ├─1021
+│  │      │  │      │      ├─523
+│  │      │  │      │      ├─578
+│  │      │  │      │      ├─684
+│  │      │  │      │      └─783
+│  │      │  │      ├─Runner
+│  │      │  │      ├─TextUI
+│  │      │  │      ├─Util
+│  │      │  │      │  └─TestDox
+│  │      │  │      └─_files
+│  │      │  │          ├─Inheritance
+│  │      │  │          └─JsonData
+│  │      │  └─phpunit-mock-objects
+│  │      │      ├─build
+│  │      │      ├─src
+│  │      │      │  └─Framework
+│  │      │      │      └─MockObject
+│  │      │      │          ├─Builder
+│  │      │      │          ├─Exception
+│  │      │      │          ├─Generator
+│  │      │      │          ├─Invocation
+│  │      │      │          ├─Matcher
+│  │      │      │          └─Stub
+│  │      │      └─tests
+│  │      │          ├─MockObject
+│  │      │          │  ├─Invocation
+│  │      │          │  └─Matcher
+│  │      │          └─_fixture
+│  │      ├─sebastian
+│  │      │  ├─comparator
+│  │      │  │  ├─build
+│  │      │  │  ├─src
+│  │      │  │  └─tests
+│  │      │  │      └─_files
+│  │      │  ├─diff
+│  │      │  │  ├─src
+│  │      │  │  │  └─LCS
+│  │      │  │  └─tests
+│  │      │  │      ├─fixtures
+│  │      │  │      └─LCS
+│  │      │  ├─environment
+│  │      │  │  ├─src
+│  │      │  │  └─tests
+│  │      │  ├─exporter
+│  │      │  │  ├─src
+│  │      │  │  └─tests
+│  │      │  ├─global-state
+│  │      │  │  ├─src
+│  │      │  │  └─tests
+│  │      │  │      └─_fixture
+│  │      │  ├─recursion-context
+│  │      │  │  ├─src
+│  │      │  │  └─tests
+│  │      │  └─version
+│  │      │      └─src
+│  │      ├─symfony
+│  │      │  ├─dom-crawler
+│  │      │  │  ├─Field
+│  │      │  │  └─Tests
+│  │      │  │      ├─Field
+│  │      │  │      └─Fixtures
+│  │      │  ├─polyfill-mbstring
+│  │      │  │  └─Resources
+│  │      │  │      └─unidata
+│  │      │  └─yaml
+│  │      │      ├─Command
+│  │      │      ├─Exception
+│  │      │      └─Tests
+│  │      │          ├─Command
+│  │      │          └─Fixtures
+│  │      ├─topthink
+│  │      │  ├─think-angular
+│  │      │  │  ├─drivers
+│  │      │  │  │  └─thinkphp5
+│  │      │  │  ├─src
+│  │      │  │  └─test
+│  │      │  │      ├─cache
+│  │      │  │      ├─data
+│  │      │  │      └─view
+│  │      │  ├─think-captcha
+│  │      │  │  ├─assets
+│  │      │  │  │  ├─bgs
+│  │      │  │  │  ├─ttfs
+│  │      │  │  │  └─zhttfs
+│  │      │  │  └─src
+│  │      │  ├─think-helper
+│  │      │  │  └─src
+│  │      │  │      └─hash
+│  │      │  ├─think-image
+│  │      │  │  ├─src
+│  │      │  │  │  └─image
+│  │      │  │  │      └─gif
+│  │      │  │  └─tests
+│  │      │  │      ├─images
+│  │      │  │      └─tmp
+│  │      │  ├─think-installer
+│  │      │  │  └─src
+│  │      │  ├─think-migration
+│  │      │  │  ├─phinx
+│  │      │  │  │  └─src
+│  │      │  │  │      └─Phinx
+│  │      │  │  │          ├─Db
+│  │      │  │  │          │  ├─Adapter
+│  │      │  │  │          │  └─Table
+│  │      │  │  │          ├─Migration
+│  │      │  │  │          └─Seed
+│  │      │  │  └─src
+│  │      │  │      └─command
+│  │      │  │          ├─migrate
+│  │      │  │          └─seed
+│  │      │  ├─think-mongo
+│  │      │  │  └─src
+│  │      │  ├─think-queue
+│  │      │  │  └─src
+│  │      │  │      └─queue
+│  │      │  │          ├─command
+│  │      │  │          ├─connector
+│  │      │  │          └─job
+│  │      │  ├─think-sae
+│  │      │  │  └─src
+│  │      │  ├─think-testing
+│  │      │  │  └─src
+│  │      │  │      └─command
+│  │      │  └─think-worker
+│  │      │      └─src
+│  │      ├─webmozart
+│  │      │  └─assert
+│  │      │      ├─src
+│  │      │      └─tests
+│  │      └─workerman
+│  │          └─workerman
+│  │              ├─Connection
+│  │              ├─Events
+│  │              │  └─React
+│  │              ├─Lib
+│  │              └─Protocols
+│  │                  └─Http
+│  ├─店面管理系统-设计图psd
+│  │  └─psd
+│  │      └─old version
+│  ├─微信APP
+│  │  └─psd
+│  ├─数据库设计
+│  └─资料
+├─server
+│  ├─config
+│  ├─libs
+│  ├─test-json
+│  └─wechat
+├─test
+└─tpl
